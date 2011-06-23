@@ -30,24 +30,24 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     @try {
+        if (objects == nil) {
+            objects = [[NSMutableArray alloc] init];
+        }
+        else {
+            [objects removeAllObjects];
+        }
+        
         S3ListObjectsRequest  *listObjectRequest = [[[S3ListObjectsRequest alloc] initWithName:self.bucket] autorelease];
 
         S3ListObjectsResponse *listObjectResponse = [[Constants s3] listObjects:listObjectRequest];
         S3ListObjectsResult   *listObjectsResults = listObjectResponse.listObjectsResult;
 
-
-        if (objects == nil) {
-            objects = [[NSMutableArray alloc] initWithCapacity:[listObjectsResults.objectSummaries count]];
-        }
-        else {
-            [objects removeAllObjects];
-        }
         for (S3ObjectSummary *objectSummary in listObjectsResults.objectSummaries) {
             [objects addObject:[objectSummary key]];
         }
         [objects sortUsingSelector:@selector(compare:)];
     }
-    @catch (AmazonServiceException *exception) {
+    @catch (AmazonClientException *exception) {
         NSLog(@"Exception = %@", exception);
         [objects addObject:@"Unable to load objects!"];
     }
