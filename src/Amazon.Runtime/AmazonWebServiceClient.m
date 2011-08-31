@@ -96,11 +96,11 @@
         [urlRequest addValue:@"application/x-www-form-urlencoded; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
 
         NSURLConnection *urlConnection = [NSURLConnection connectionWithRequest:urlRequest delegate:response];
-        NSTimer         *timeoutTimer  = [NSTimer scheduledTimerWithTimeInterval:self.timeout target:response selector:@selector(timeout) userInfo:nil repeats:NO];
 
         originalRequest.urlConnection = urlConnection;
 
         if ([generatedRequest delegate] == nil) {
+            NSTimer         *timeoutTimer  = [NSTimer scheduledTimerWithTimeInterval:self.timeout target:response selector:@selector(timeout) userInfo:nil repeats:NO];
             generatedRequest.delegate = [[[AmazonRequestDelegate alloc] init] autorelease];
 
             while (![(AmazonRequestDelegate *)(generatedRequest.delegate)isFinishedOrFailed]) {
