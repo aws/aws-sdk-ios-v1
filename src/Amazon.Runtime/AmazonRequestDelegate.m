@@ -14,6 +14,7 @@
  */
 
 #import "AmazonRequestDelegate.h"
+#import "AmazonLogger.h"
 
 @implementation AmazonRequestDelegate
 

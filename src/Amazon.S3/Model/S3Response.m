@@ -14,6 +14,7 @@
  */
 
 #import "S3Response.h"
+#import "AmazonLogger.h"
 
 @implementation S3Response
 

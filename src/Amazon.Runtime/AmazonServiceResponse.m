@@ -16,6 +16,7 @@
 
 #import "AmazonServiceResponse.h"
 #import "AmazonServiceResponseUnmarshaller.h"
+#import "AmazonLogger.h"
 
 @implementation AmazonServiceResponse
 

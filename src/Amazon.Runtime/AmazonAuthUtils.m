@@ -14,6 +14,7 @@
  */
 
 #import "AmazonAuthUtils.h"
+#import "AmazonLogger.h"
 
 @implementation AmazonAuthUtils
 
