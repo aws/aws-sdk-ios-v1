@@ -27,7 +27,8 @@
     [request setDelegate:[selectRequest delegate]];
     [request setCredentials:[selectRequest credentials]];
     [request setEndpoint:[selectRequest requestEndpoint]];
-
+    [request setRequestTag:[selectRequest requestTag]];
+    
     if (selectRequest != nil) {
         if (selectRequest.selectExpression != nil) {
             [request setParameterValue:[NSString stringWithFormat:@"%@", selectRequest.selectExpression] forKey:[NSString stringWithFormat:@"%@", @"SelectExpression"]];

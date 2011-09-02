@@ -25,6 +25,7 @@
 @synthesize userAgent;
 @synthesize credentials;
 @synthesize urlConnection;
+@synthesize requestTag;
 
 -(void)sign
 {

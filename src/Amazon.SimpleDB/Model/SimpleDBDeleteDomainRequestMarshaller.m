@@ -27,6 +27,7 @@
     [request setDelegate:[deleteDomainRequest delegate]];
     [request setCredentials:[deleteDomainRequest credentials]];
     [request setEndpoint:[deleteDomainRequest requestEndpoint]];
+    [request setRequestTag:[deleteDomainRequest requestTag]];
 
     if (deleteDomainRequest != nil) {
         if (deleteDomainRequest.domainName != nil) {

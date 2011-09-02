@@ -27,6 +27,7 @@
     [request setDelegate:[listDomainsRequest delegate]];
     [request setCredentials:[listDomainsRequest credentials]];
     [request setEndpoint:[listDomainsRequest requestEndpoint]];
+    [request setRequestTag:[listDomainsRequest requestTag]];
 
     if (listDomainsRequest != nil) {
         if (listDomainsRequest.maxNumberOfDomains != nil) {

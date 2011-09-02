@@ -27,6 +27,7 @@
     [request setDelegate:[domainMetadataRequest delegate]];
     [request setCredentials:[domainMetadataRequest credentials]];
     [request setEndpoint:[domainMetadataRequest requestEndpoint]];
+    [request setRequestTag:[domainMetadataRequest requestTag]];
 
     if (domainMetadataRequest != nil) {
         if (domainMetadataRequest.domainName != nil) {

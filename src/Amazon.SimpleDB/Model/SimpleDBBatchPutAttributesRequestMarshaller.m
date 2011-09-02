@@ -27,6 +27,7 @@
     [request setDelegate:[batchPutAttributesRequest delegate]];
     [request setCredentials:[batchPutAttributesRequest credentials]];
     [request setEndpoint:[batchPutAttributesRequest requestEndpoint]];
+    [request setRequestTag:[batchPutAttributesRequest requestTag]];
 
     if (batchPutAttributesRequest != nil) {
         if (batchPutAttributesRequest.domainName != nil) {

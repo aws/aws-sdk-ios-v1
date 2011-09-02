@@ -27,6 +27,7 @@
     [request setDelegate:[batchDeleteAttributesRequest delegate]];
     [request setCredentials:[batchDeleteAttributesRequest credentials]];
     [request setEndpoint:[batchDeleteAttributesRequest requestEndpoint]];
+    [request setRequestTag:[batchDeleteAttributesRequest requestTag]];
 
     if (batchDeleteAttributesRequest != nil) {
         if (batchDeleteAttributesRequest.domainName != nil) {

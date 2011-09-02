@@ -21,6 +21,7 @@
 @synthesize credentials;
 @synthesize requestEndpoint;
 @synthesize urlConnection;
+@synthesize requestTag;
 
 -(void)setDelegate:(id<AmazonServiceRequestDelegate> )aDelegate;
 {
