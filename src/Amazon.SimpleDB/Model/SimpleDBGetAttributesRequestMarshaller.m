@@ -27,6 +27,7 @@
     [request setDelegate:[getAttributesRequest delegate]];
     [request setCredentials:[getAttributesRequest credentials]];
     [request setEndpoint:[getAttributesRequest requestEndpoint]];
+    [request setRequestTag:[getAttributesRequest requestTag]];
 
     if (getAttributesRequest != nil) {
         if (getAttributesRequest.domainName != nil) {

@@ -27,7 +27,8 @@
     [request setDelegate:[deleteAttributesRequest delegate]];
     [request setCredentials:[deleteAttributesRequest credentials]];
     [request setEndpoint:[deleteAttributesRequest requestEndpoint]];
-
+    [request setRequestTag:[deleteAttributesRequest requestTag]];
+    
     if (deleteAttributesRequest != nil) {
         if (deleteAttributesRequest.domainName != nil) {
             [request setParameterValue:[NSString stringWithFormat:@"%@", deleteAttributesRequest.domainName] forKey:[NSString stringWithFormat:@"%@", @"DomainName"]];

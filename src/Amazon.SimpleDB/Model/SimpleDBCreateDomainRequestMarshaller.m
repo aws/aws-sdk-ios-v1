@@ -27,6 +27,7 @@
     [request setDelegate:[createDomainRequest delegate]];
     [request setCredentials:[createDomainRequest credentials]];
     [request setEndpoint:[createDomainRequest requestEndpoint]];
+    [request setRequestTag:[createDomainRequest requestTag]];
 
     if (createDomainRequest != nil) {
         if (createDomainRequest.domainName != nil) {
