@@ -11,6 +11,7 @@ Using dummy classes in ScoreModel class: 118+822=940 lines.
 Using tags in ScoreModel: 57+637=694= lines.
 Version that uses tag request is smaller, easier to read, write and maintain. 
 
+This comparative is in tag_request_feature_comparision folder. Belongs to an actual project I'm working on, therefore you may not compile it.
 
 *** Fixed some warnings about AmazonLogger ***
 
