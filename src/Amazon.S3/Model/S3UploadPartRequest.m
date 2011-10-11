@@ -37,11 +37,15 @@
 {
     self.subResource = [NSString stringWithFormat:@"%@=%d&%@=%@", kS3QueryParamPartNumber, self.partNumber, kS3QueryParamUploadId, self.uploadId];
 
+    if (self.contentLength < 1) {
+        self.contentLength = [data length];
+    }
+
     [super configureURLRequest];
 
     [self.urlRequest setHTTPBody:self.data];
-    if (self.contentLength < 1) {
-        self.contentLength = [data length];
+    if (nil != self.contentMD5) {
+        [self.urlRequest setValue:self.contentMD5 forHTTPHeaderField:kHttpHdrContentMD5];
     }
 
     [urlRequest setHTTPMethod:kHttpMethodPut];
