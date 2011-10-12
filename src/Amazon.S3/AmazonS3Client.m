@@ -273,6 +273,9 @@
     return (S3AbortMultipartUploadResponse *)[self invoke:abortMultipartUploadRequest];
 }
 
+// This method is misleading.  It will always fail, because aborting a multipart upload
+// requires not just the upload ID but also the key and the bucket, which are used in the URL
+// and in signing the request.  If you keep this method, it should take those two values as parameters.
 -(void)abortMultipartUploadWithUploadId:(NSString *)theUploadId
 {
     S3AbortMultipartUploadRequest *request = [[[S3AbortMultipartUploadRequest alloc] init] autorelease];
