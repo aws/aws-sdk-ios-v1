@@ -35,7 +35,9 @@
 +(id)inputStreamWithData:(NSData *)data
 {
 	S3UploadInputStream *uploadStream = [[[S3UploadInputStream alloc] init] autorelease];
-	[uploadStream setStream:[NSInputStream inputStreamWithData:data]];
+	if (data) {
+		[uploadStream setStream:[NSInputStream inputStreamWithData:data]];
+	}
 	return uploadStream;
 }
 
