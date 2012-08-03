@@ -45,7 +45,7 @@
 
 
     if ([jsonObject valueForKey:@"CreationDateTime"] != nil) {
-        tableDescription.creationDateTime = [AmazonSDKUtil millisSinceEpochToDate:[jsonObject valueForKey:@"CreationDateTime"]];
+        tableDescription.creationDateTime = [AmazonSDKUtil secondsSinceEpochToDate:[jsonObject valueForKey:@"CreationDateTime"]];
     }
 
 

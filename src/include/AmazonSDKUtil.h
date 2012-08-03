@@ -38,6 +38,7 @@
 +(NSDate *)convertStringToDate:(NSString *)string;
 +(NSDate *)convertStringToDate:(NSString *)string usingFormat:(NSString *)dateFormat;
 +(NSDate *)millisSinceEpochToDate:(NSNumber *)millisSinceEpoch;
++(NSDate *)secondsSinceEpochToDate:(NSNumber *)secondsSinceEpoch;
 +(NSURL *)URLWithURL:(NSURL *)theURL andProtocol:(NSString *)theProtocol;
 +(NSLocale *)timestampLocale;
 @end

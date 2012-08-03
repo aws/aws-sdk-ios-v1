@@ -311,6 +311,11 @@ static const short base64DecodingTable[] =
     return [NSDate dateWithTimeIntervalSince1970:([millisSinceEpoch longLongValue] / 1000)];
 }
 
++(NSDate *)secondsSinceEpochToDate:(NSNumber *)secondsSinceEpoch;
+{
+    return [NSDate dateWithTimeIntervalSince1970: [secondsSinceEpoch doubleValue] ];
+}
+
 +(NSDate *)convertStringToDate:(NSString *)string usingFormat:(NSString *)dateFormat
 {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];

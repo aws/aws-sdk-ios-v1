@@ -28,12 +28,12 @@
 
 
     if ([jsonObject valueForKey:@"LastIncreaseDateTime"] != nil) {
-        provisionedThroughputDescription.lastIncreaseDateTime = [AmazonSDKUtil millisSinceEpochToDate:[jsonObject valueForKey:@"LastIncreaseDateTime"]];
+        provisionedThroughputDescription.lastIncreaseDateTime = [AmazonSDKUtil secondsSinceEpochToDate:[jsonObject valueForKey:@"LastIncreaseDateTime"]];
     }
 
 
     if ([jsonObject valueForKey:@"LastDecreaseDateTime"] != nil) {
-        provisionedThroughputDescription.lastDecreaseDateTime = [AmazonSDKUtil millisSinceEpochToDate:[jsonObject valueForKey:@"LastDecreaseDateTime"]];
+        provisionedThroughputDescription.lastDecreaseDateTime = [AmazonSDKUtil secondsSinceEpochToDate:[jsonObject valueForKey:@"LastDecreaseDateTime"]];
     }
 
 
