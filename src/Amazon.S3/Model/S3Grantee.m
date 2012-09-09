@@ -50,7 +50,7 @@
     static S3Grantee *allUsers = nil;
 
     if (allUsers == nil) {
-        @synchronized(allUsers) {
+        @synchronized(self) {
             if (allUsers == nil) {
                 allUsers = [[S3Grantee granteeWithURI:kS3GroupURIAllUsers] retain];
             }
@@ -64,7 +64,7 @@
     static S3Grantee *authUsers = nil;
 
     if (authUsers == nil) {
-        @synchronized(authUsers) {
+        @synchronized(self) {
             if (authUsers == nil) {
                 authUsers = [[S3Grantee granteeWithURI:kS3GroupURIAuthUsers] retain];
             }
