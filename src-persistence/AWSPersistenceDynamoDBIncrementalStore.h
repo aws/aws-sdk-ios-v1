@@ -18,6 +18,7 @@
 
 extern NSString *const AWSPersistenceDynamoDBIncrementalStoreType;
 extern NSString *const AWSPersistenceDynamoDBHashKey;
+extern NSString *const AWSPersistenceDynamoDBRangeKey;
 extern NSString *const AWSPersistenceDynamoDBVersionKey;
 extern NSString *const AWSPersistenceDynamoDBDelegate;
 extern NSString *const AWSPersistenceDynamoDBTableMapper;
