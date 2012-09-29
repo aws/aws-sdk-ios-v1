@@ -133,15 +133,15 @@ NSString *const AWSPersistenceDynamoDBUserAgentPrefix = @"Persistence Framework"
                     }
                 }
             }
-            // @duckmaestro: HashKey+RangeKey fetch or query
+            // HashKey+RangeKey fetch or query
             else if([fetchRequest.predicate isKindOfClass:[NSCompoundPredicate class]])
             {
                 NSCompoundPredicate *predicate = (NSCompoundPredicate *)fetchRequest.predicate;
                 if([predicate compoundPredicateType] == NSAndPredicateType
                    && [[predicate subpredicates] count] == 2)
                 {
-                    NSComparisonPredicate* leftPredicate = [[predicate subpredicates] objectAtIndex:0];
-                    NSComparisonPredicate* rightPredicate = [[predicate subpredicates] objectAtIndex:1];
+                    NSComparisonPredicate *leftPredicate = [[predicate subpredicates] objectAtIndex:0];
+                    NSComparisonPredicate *rightPredicate = [[predicate subpredicates] objectAtIndex:1];
 
                     if([[[leftPredicate leftExpression] keyPath] isEqualToString:entityHashKeyName]
                        && [[[rightPredicate leftExpression] keyPath] isEqualToString:entityRangeKeyName])
@@ -174,7 +174,7 @@ NSString *const AWSPersistenceDynamoDBUserAgentPrefix = @"Persistence Framework"
                                 && rightPredicate.predicateOperatorType == NSBetweenPredicateOperatorType)
                         {
                             id hashKeyValue = [[leftPredicate rightExpression] expressionValueWithObject:nil context:nil];
-                            NSArray* rangeKeyLimits = [[rightPredicate rightExpression] expressionValueWithObject:nil context:nil];
+                            NSArray *rangeKeyLimits = [[rightPredicate rightExpression] expressionValueWithObject:nil context:nil];
                             id rangeKeyMin = [rangeKeyLimits objectAtIndex:0];
                             id rangeKeyMax = [rangeKeyLimits objectAtIndex:1];
                             uint limit = fetchRequest.fetchLimit;
@@ -289,7 +289,7 @@ NSString *const AWSPersistenceDynamoDBUserAgentPrefix = @"Persistence Framework"
         id hashUnknown = [objectIdToHashKey valueForKey:objectID.URIRepresentation.description];
         if([hashUnknown isKindOfClass:[NSDictionary class]])
         {
-            // @duckmaestro: hash + range key
+            // hash + range key
             NSDictionary *compositeHash = hashUnknown;
             
             DynamoDBAttributeValue *attributeValueHashKey = [self attributeValueFromObject:[compositeHash objectForKey:@"hashKey"]];
@@ -508,7 +508,7 @@ NSString *const AWSPersistenceDynamoDBUserAgentPrefix = @"Persistence Framework"
 {
     AMZLogDebug(@"- (NSArray *)obtainPermanentIDsForObjects:(NSArray *)array error:(NSError **)error called.");
 
-    // @duckmaestro-todo: modify to support range key if present.
+    // todo: if needed, modify to support range key.
     
     NSMutableArray *resultArray = [NSMutableArray arrayWithCapacity:[array count]];
     for(NSManagedObject *managedObject in array)
