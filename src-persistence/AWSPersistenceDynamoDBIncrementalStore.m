@@ -140,8 +140,8 @@ NSString *const AWSPersistenceDynamoDBUserAgentPrefix = @"Persistence Framework"
                 if([predicate compoundPredicateType] == NSAndPredicateType
                    && [[predicate subpredicates] count] == 2)
                 {
-                    NSComparisonPredicate *leftPredicate = [[predicate subpredicates] objectAtIndex:0];
-                    NSComparisonPredicate *rightPredicate = [[predicate subpredicates] objectAtIndex:1];
+                    NSComparisonPredicate* leftPredicate = [[predicate subpredicates] objectAtIndex:0];
+                    NSComparisonPredicate* rightPredicate = [[predicate subpredicates] objectAtIndex:1];
 
                     if([[[leftPredicate leftExpression] keyPath] isEqualToString:entityHashKeyName]
                        && [[[rightPredicate leftExpression] keyPath] isEqualToString:entityRangeKeyName])
@@ -174,7 +174,7 @@ NSString *const AWSPersistenceDynamoDBUserAgentPrefix = @"Persistence Framework"
                                 && rightPredicate.predicateOperatorType == NSBetweenPredicateOperatorType)
                         {
                             id hashKeyValue = [[leftPredicate rightExpression] expressionValueWithObject:nil context:nil];
-                            NSArray *rangeKeyLimits = [[rightPredicate rightExpression] expressionValueWithObject:nil context:nil];
+                            NSArray* rangeKeyLimits = [[rightPredicate rightExpression] expressionValueWithObject:nil context:nil];
                             id rangeKeyMin = [rangeKeyLimits objectAtIndex:0];
                             id rangeKeyMax = [rangeKeyLimits objectAtIndex:1];
                             uint limit = fetchRequest.fetchLimit;
@@ -508,7 +508,7 @@ NSString *const AWSPersistenceDynamoDBUserAgentPrefix = @"Persistence Framework"
 {
     AMZLogDebug(@"- (NSArray *)obtainPermanentIDsForObjects:(NSArray *)array error:(NSError **)error called.");
 
-    // todo: if needed, modify to support range key.
+    // todo: modify to support range key if present.
     
     NSMutableArray *resultArray = [NSMutableArray arrayWithCapacity:[array count]];
     for(NSManagedObject *managedObject in array)
@@ -547,8 +547,22 @@ NSString *const AWSPersistenceDynamoDBUserAgentPrefix = @"Persistence Framework"
     {
         NSMutableArray *resultArray = [NSMutableArray array];
 
-        DynamoDBScanRequest  *scanRequest  = [[DynamoDBScanRequest alloc] initWithTableName:[self tableNameForEntityName:request.entityName]];
-        scanRequest.attributesToGet = [NSMutableArray arrayWithObject:[self hashKeyForEntityName:request.entity.name]];
+        NSString *entityHashKeyName = [self hashKeyForEntityName:request.entity.name];
+        NSString *entityRangeKeyName = [self rangeKeyForEntityName:request.entity.name];
+        
+        DynamoDBScanRequest *scanRequest  = [[DynamoDBScanRequest alloc] initWithTableName:[self tableNameForEntityName:request.entityName]];
+        
+        NSMutableArray *attributesToGet = [NSMutableArray array];
+        if(entityRangeKeyName == nil)
+        {         
+            [attributesToGet addObject:[self hashKeyForEntityName:request.entity.name]];
+        }
+        else
+        {
+            [attributesToGet addObject:[self hashKeyForEntityName:request.entity.name]];
+            [attributesToGet addObject:[self rangeKeyForEntityName:request.entity.name]];
+        }
+        scanRequest.attributesToGet = attributesToGet;
 
         DynamoDBKey *lastEvaluatedKey = nil;
         DynamoDBScanResponse *response = nil;
@@ -568,7 +582,7 @@ NSString *const AWSPersistenceDynamoDBUserAgentPrefix = @"Persistence Framework"
                     NSString *hashKeyRetrieved;
                     NSString *rangeKeyRetrieved;
                     
-                    DynamoDBAttributeValue *attributeValueHashKey = (DynamoDBAttributeValue *)[dic objectForKey:[self hashKeyForEntityName:request.entity.name]];
+                    DynamoDBAttributeValue *attributeValueHashKey = (DynamoDBAttributeValue *)[dic objectForKey:entityHashKeyName];
                     if(attributeValueHashKey.s != nil)
                     {
                         hashKeyRetrieved = attributeValueHashKey.s;
@@ -579,7 +593,7 @@ NSString *const AWSPersistenceDynamoDBUserAgentPrefix = @"Persistence Framework"
                     }
                     
                     DynamoDBAttributeValue *attributeValueRangeKey = nil;
-                    attributeValueRangeKey = (DynamoDBAttributeValue *)[dic objectForKey:[self rangeKeyForEntityName:request.entity.name]];
+                    attributeValueRangeKey = (DynamoDBAttributeValue *)[dic objectForKey:entityRangeKeyName];
                     if(attributeValueRangeKey != nil)
                     {
                         if(attributeValueRangeKey.s != nil)
@@ -996,6 +1010,9 @@ NSString *const AWSPersistenceDynamoDBUserAgentPrefix = @"Persistence Framework"
             NSMutableDictionary *userDic = [NSMutableDictionary dictionaryWithCapacity:[properties count]];
             NSMutableDictionary *userDicForDelete = [NSMutableDictionary dictionaryWithCapacity:[properties count]];
             NSMutableArray *deletedValues = [NSMutableArray arrayWithCapacity:10];
+            
+            NSString *entityHashKeyName = [self hashKeyForEntityName:managedObject.entity.name];
+            NSString *entityRangeKeyName = [self rangeKeyForEntityName:managedObject.entity.name];
 
             DynamoDBAttributeValue *attributeValue = nil;
             DynamoDBAttributeValueUpdate *attributeValueUpdate = nil;
@@ -1003,7 +1020,8 @@ NSString *const AWSPersistenceDynamoDBUserAgentPrefix = @"Persistence Framework"
             for(NSString *key in [managedObject changedValues])
             {
                 // If not a hash key
-                if(![[self hashKeyForEntityName:managedObject.entity.name] isEqualToString:key])
+                if(![entityHashKeyName isEqualToString:key]
+                    && ![entityRangeKeyName isEqualToString:key])
                 {
                     if([[managedObject.entity relationshipsByName] objectForKey:key] == nil)
                     {
@@ -1024,7 +1042,7 @@ NSString *const AWSPersistenceDynamoDBUserAgentPrefix = @"Persistence Framework"
                 }
                 else
                 {
-                    NSDictionary *userInfo = [NSDictionary dictionaryWithObjectsAndKeys:[NSString stringWithFormat:@"%@[%@] has been modified. Hash keys cannot be updated.", key, [[managedObject changedValues] valueForKey:key]], @"message", nil];
+                    NSDictionary *userInfo = [NSDictionary dictionaryWithObjectsAndKeys:[NSString stringWithFormat:@"%@[%@] has been modified. Keys cannot be updated.", key, [[managedObject changedValues] valueForKey:key]], @"message", nil];
                     *error = [NSError errorWithDomain:AWSPersistenceDynamoDBClientErrorDomain code:-1 userInfo:userInfo];
                     return NO;
                 }
@@ -1084,10 +1102,21 @@ NSString *const AWSPersistenceDynamoDBUserAgentPrefix = @"Persistence Framework"
             attributeValueUpdate = [[DynamoDBAttributeValueUpdate alloc] initWithValue:attributeValue andAction:@"ADD"];
             [userDic setValue:attributeValueUpdate forKey:[self versionKeyForEntityName:managedObject.entity.name]];
 
-            attributeValue = [self attributeValueFromObject:[managedObject valueForKey:[self hashKeyForEntityName:managedObject.entity.name]]];
-            DynamoDBKey *hashKey = [[DynamoDBKey alloc] initWithHashKeyElement:attributeValue];
+            DynamoDBKey *key = nil;
+            if(entityRangeKeyName == nil)
+            {
+                DynamoDBAttributeValue *attributeValueHashKey = [self attributeValueFromObject:[managedObject valueForKey:entityHashKeyName]];
+                key = [[DynamoDBKey alloc] initWithHashKeyElement:attributeValueHashKey];
+            }
+            else
+            {
+                DynamoDBAttributeValue *attributeValueHashKey = [self attributeValueFromObject:[managedObject valueForKey:entityHashKeyName]];
+                DynamoDBAttributeValue *attributeValueRangeKey = [self attributeValueFromObject:[managedObject valueForKey:entityRangeKeyName]];
+                key = [[DynamoDBKey alloc] initWithHashKeyElement:attributeValueHashKey andRangeKeyElement:attributeValueRangeKey];
+            }
+            
             DynamoDBUpdateItemRequest *updateItemRequest = [[DynamoDBUpdateItemRequest alloc] initWithTableName:[self tableNameForEntityName:managedObject.entity.name]
-                                                                                                         andKey:hashKey
+                                                                                                         andKey:key
                                                                                             andAttributeUpdates:userDic];
 
             AmazonDynamoDBClient *dynamoDBClient = [self dynamoDBClient];
@@ -1098,7 +1127,7 @@ NSString *const AWSPersistenceDynamoDBUserAgentPrefix = @"Persistence Framework"
                 if([userDicForDelete count] > 0)
                 {
                     DynamoDBUpdateItemRequest *updateItemRequest = [[DynamoDBUpdateItemRequest alloc] initWithTableName:[self tableNameForEntityName:managedObject.entity.name]
-                                                                                                                 andKey:hashKey
+                                                                                                                 andKey:key
                                                                                                     andAttributeUpdates:userDicForDelete];
                     updateItemResponse = [dynamoDBClient updateItem:updateItemRequest];
                     if(updateItemResponse.error != nil)
