@@ -72,7 +72,7 @@
         keyPath  = (self.key == nil ? @"" : [NSString stringWithFormat:@"%@", [self.key stringWithURLEncoding]]);
     }
     else {
-        keyPath  = (self.key == nil ? [NSString stringWithFormat:@"%@/", self.bucket] : [NSString stringWithFormat:@"/%@/%@", self.bucket, [self.key stringWithURLEncoding]]);
+        keyPath  = (self.key == nil ? [NSString stringWithFormat:@"%@/", self.bucket] : [NSString stringWithFormat:@"%@/%@", self.bucket, [self.key stringWithURLEncoding]]);
     }
     resQuery = (self.subResource == nil ? @"" : [NSString stringWithFormat:@"?%@", self.subResource]);
 

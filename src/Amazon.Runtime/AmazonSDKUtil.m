@@ -289,7 +289,7 @@ static NSTimeInterval _clockskew = 0.0;
                        @"audio/mp4a-latm", @"m4a",
                        nil];
     }
-    NSString *mimetype = (NSString *)[lookupTable objectForKey:extension];
+    NSString *mimetype = (NSString *)[lookupTable objectForKey:[extension lowercaseString]];
     return mimetype == nil ? @"application/octet-stream" : mimetype;
 }
 

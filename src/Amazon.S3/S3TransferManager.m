@@ -203,6 +203,8 @@ NSInteger const S3DefaultMaxConcurrentOperationCount = 3;
         if(putObjectRequest.delegate == nil)
         {
             putObjectOperation.delegate = self.delegate;
+        } else {
+            putObjectOperation.delegate = putObjectRequest.delegate;
         }
 
         [self.operationQueue addOperation:putObjectOperation];
