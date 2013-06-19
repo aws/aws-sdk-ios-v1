@@ -42,12 +42,11 @@
 
 -(id)initWithCredentials:(AmazonCredentials *)credentials
 {
-    if (self = [self init]) {
-        AmazonStaticCredentialsProvider *provider = [[AmazonStaticCredentialsProvider alloc] initWithCredentials:credentials];
-        [self initWithCredentialsProvider:provider];
-        [provider release];
+    AmazonStaticCredentialsProvider *provider = [[AmazonStaticCredentialsProvider alloc] initWithCredentials:credentials];
+    if (self = [self initWithCredentialsProvider:provider]) {
     }
     
+    [provider release];
     return self;
 }
 
