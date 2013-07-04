@@ -35,10 +35,6 @@
         return [AmazonClientException exceptionWithMessage : @"Bucket name should not contain two adjacent periods."];
     }
 
-    if ( [S3BucketNameUtilities contains:theBucketName searchString:@"_"]) {
-        return [AmazonClientException exceptionWithMessage : @"Bucket name should not contain '_'."];
-    }
-
     if ( [S3BucketNameUtilities contains:theBucketName searchString:@"-."] ||
          [S3BucketNameUtilities contains:theBucketName searchString:@".-"]) {
         return [AmazonClientException exceptionWithMessage : @"Bucket name should not contain dashes next to periods."];
