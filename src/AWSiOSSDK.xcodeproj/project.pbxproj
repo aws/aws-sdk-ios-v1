@@ -2556,6 +2556,165 @@
 		38FFA9AF16DEC58200CB3B82 /* S3MultipartUploadOperation_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 38FFA9AC16DEC58200CB3B82 /* S3MultipartUploadOperation_Internal.h */; };
 		38FFA9B016DEC58200CB3B82 /* S3PutObjectOperation_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 38FFA9AD16DEC58200CB3B82 /* S3PutObjectOperation_Internal.h */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		B20D104A17C02F4300C532C0 /* AmazonCloudFormationClient.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D100517C02F4200C532C0 /* AmazonCloudFormationClient.h */; };
+		B20D104B17C02F4300C532C0 /* AWSCloudFormation.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D100617C02F4200C532C0 /* AWSCloudFormation.h */; };
+		B20D104C17C02F4300C532C0 /* CloudFormationCancelUpdateStackRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D100717C02F4200C532C0 /* CloudFormationCancelUpdateStackRequest.h */; };
+		B20D104D17C02F4300C532C0 /* CloudFormationCancelUpdateStackRequestMarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D100817C02F4200C532C0 /* CloudFormationCancelUpdateStackRequestMarshaller.h */; };
+		B20D104E17C02F4300C532C0 /* CloudFormationCancelUpdateStackResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D100917C02F4200C532C0 /* CloudFormationCancelUpdateStackResponse.h */; };
+		B20D104F17C02F4300C532C0 /* CloudFormationCancelUpdateStackResponseUnmarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D100A17C02F4200C532C0 /* CloudFormationCancelUpdateStackResponseUnmarshaller.h */; };
+		B20D105017C02F4300C532C0 /* CloudFormationCreateStackRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D100B17C02F4200C532C0 /* CloudFormationCreateStackRequest.h */; };
+		B20D105117C02F4300C532C0 /* CloudFormationCreateStackRequestMarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D100C17C02F4200C532C0 /* CloudFormationCreateStackRequestMarshaller.h */; };
+		B20D105217C02F4300C532C0 /* CloudFormationCreateStackResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D100D17C02F4200C532C0 /* CloudFormationCreateStackResponse.h */; };
+		B20D105317C02F4300C532C0 /* CloudFormationCreateStackResponseUnmarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D100E17C02F4200C532C0 /* CloudFormationCreateStackResponseUnmarshaller.h */; };
+		B20D105417C02F4300C532C0 /* CloudFormationDeleteStackRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D100F17C02F4200C532C0 /* CloudFormationDeleteStackRequest.h */; };
+		B20D105517C02F4300C532C0 /* CloudFormationDeleteStackRequestMarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D101017C02F4200C532C0 /* CloudFormationDeleteStackRequestMarshaller.h */; };
+		B20D105617C02F4300C532C0 /* CloudFormationDeleteStackResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D101117C02F4200C532C0 /* CloudFormationDeleteStackResponse.h */; };
+		B20D105717C02F4300C532C0 /* CloudFormationDeleteStackResponseUnmarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D101217C02F4200C532C0 /* CloudFormationDeleteStackResponseUnmarshaller.h */; };
+		B20D105817C02F4300C532C0 /* CloudFormationDescribeStackEventsRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D101317C02F4200C532C0 /* CloudFormationDescribeStackEventsRequest.h */; };
+		B20D105917C02F4300C532C0 /* CloudFormationDescribeStackEventsRequestMarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D101417C02F4200C532C0 /* CloudFormationDescribeStackEventsRequestMarshaller.h */; };
+		B20D105A17C02F4300C532C0 /* CloudFormationDescribeStackEventsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D101517C02F4200C532C0 /* CloudFormationDescribeStackEventsResponse.h */; };
+		B20D105B17C02F4300C532C0 /* CloudFormationDescribeStackEventsResponseUnmarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D101617C02F4200C532C0 /* CloudFormationDescribeStackEventsResponseUnmarshaller.h */; };
+		B20D105C17C02F4300C532C0 /* CloudFormationDescribeStackResourceRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D101717C02F4200C532C0 /* CloudFormationDescribeStackResourceRequest.h */; };
+		B20D105D17C02F4300C532C0 /* CloudFormationDescribeStackResourceRequestMarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D101817C02F4200C532C0 /* CloudFormationDescribeStackResourceRequestMarshaller.h */; };
+		B20D105E17C02F4300C532C0 /* CloudFormationDescribeStackResourceResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D101917C02F4200C532C0 /* CloudFormationDescribeStackResourceResponse.h */; };
+		B20D105F17C02F4300C532C0 /* CloudFormationDescribeStackResourceResponseUnmarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D101A17C02F4200C532C0 /* CloudFormationDescribeStackResourceResponseUnmarshaller.h */; };
+		B20D106017C02F4300C532C0 /* CloudFormationDescribeStackResourcesRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D101B17C02F4200C532C0 /* CloudFormationDescribeStackResourcesRequest.h */; };
+		B20D106117C02F4300C532C0 /* CloudFormationDescribeStackResourcesRequestMarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D101C17C02F4200C532C0 /* CloudFormationDescribeStackResourcesRequestMarshaller.h */; };
+		B20D106217C02F4300C532C0 /* CloudFormationDescribeStackResourcesResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D101D17C02F4200C532C0 /* CloudFormationDescribeStackResourcesResponse.h */; };
+		B20D106317C02F4300C532C0 /* CloudFormationDescribeStackResourcesResponseUnmarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D101E17C02F4200C532C0 /* CloudFormationDescribeStackResourcesResponseUnmarshaller.h */; };
+		B20D106417C02F4300C532C0 /* CloudFormationDescribeStacksRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D101F17C02F4200C532C0 /* CloudFormationDescribeStacksRequest.h */; };
+		B20D106517C02F4300C532C0 /* CloudFormationDescribeStacksRequestMarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D102017C02F4200C532C0 /* CloudFormationDescribeStacksRequestMarshaller.h */; };
+		B20D106617C02F4300C532C0 /* CloudFormationDescribeStacksResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D102117C02F4200C532C0 /* CloudFormationDescribeStacksResponse.h */; };
+		B20D106717C02F4300C532C0 /* CloudFormationDescribeStacksResponseUnmarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D102217C02F4200C532C0 /* CloudFormationDescribeStacksResponseUnmarshaller.h */; };
+		B20D106817C02F4300C532C0 /* CloudFormationEstimateTemplateCostRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D102317C02F4200C532C0 /* CloudFormationEstimateTemplateCostRequest.h */; };
+		B20D106917C02F4300C532C0 /* CloudFormationEstimateTemplateCostRequestMarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D102417C02F4200C532C0 /* CloudFormationEstimateTemplateCostRequestMarshaller.h */; };
+		B20D106A17C02F4300C532C0 /* CloudFormationEstimateTemplateCostResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D102517C02F4200C532C0 /* CloudFormationEstimateTemplateCostResponse.h */; };
+		B20D106B17C02F4300C532C0 /* CloudFormationEstimateTemplateCostResponseUnmarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D102617C02F4200C532C0 /* CloudFormationEstimateTemplateCostResponseUnmarshaller.h */; };
+		B20D106C17C02F4300C532C0 /* CloudFormationGetTemplateRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D102717C02F4200C532C0 /* CloudFormationGetTemplateRequest.h */; };
+		B20D106D17C02F4300C532C0 /* CloudFormationGetTemplateRequestMarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D102817C02F4200C532C0 /* CloudFormationGetTemplateRequestMarshaller.h */; };
+		B20D106E17C02F4300C532C0 /* CloudFormationGetTemplateResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D102917C02F4200C532C0 /* CloudFormationGetTemplateResponse.h */; };
+		B20D106F17C02F4300C532C0 /* CloudFormationGetTemplateResponseUnmarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D102A17C02F4200C532C0 /* CloudFormationGetTemplateResponseUnmarshaller.h */; };
+		B20D107017C02F4300C532C0 /* CloudFormationListStackResourcesRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D102B17C02F4300C532C0 /* CloudFormationListStackResourcesRequest.h */; };
+		B20D107117C02F4300C532C0 /* CloudFormationListStackResourcesRequestMarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D102C17C02F4300C532C0 /* CloudFormationListStackResourcesRequestMarshaller.h */; };
+		B20D107217C02F4300C532C0 /* CloudFormationListStackResourcesResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D102D17C02F4300C532C0 /* CloudFormationListStackResourcesResponse.h */; };
+		B20D107317C02F4300C532C0 /* CloudFormationListStackResourcesResponseUnmarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D102E17C02F4300C532C0 /* CloudFormationListStackResourcesResponseUnmarshaller.h */; };
+		B20D107417C02F4300C532C0 /* CloudFormationListStacksRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D102F17C02F4300C532C0 /* CloudFormationListStacksRequest.h */; };
+		B20D107517C02F4300C532C0 /* CloudFormationListStacksRequestMarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D103017C02F4300C532C0 /* CloudFormationListStacksRequestMarshaller.h */; };
+		B20D107617C02F4300C532C0 /* CloudFormationListStacksResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D103117C02F4300C532C0 /* CloudFormationListStacksResponse.h */; };
+		B20D107717C02F4300C532C0 /* CloudFormationListStacksResponseUnmarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D103217C02F4300C532C0 /* CloudFormationListStacksResponseUnmarshaller.h */; };
+		B20D107817C02F4300C532C0 /* CloudFormationOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D103317C02F4300C532C0 /* CloudFormationOutput.h */; };
+		B20D107917C02F4300C532C0 /* CloudFormationParameter.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D103417C02F4300C532C0 /* CloudFormationParameter.h */; };
+		B20D107B17C02F4300C532C0 /* CloudFormationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D103617C02F4300C532C0 /* CloudFormationRequest.h */; };
+		B20D107C17C02F4300C532C0 /* CloudFormationResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D103717C02F4300C532C0 /* CloudFormationResponse.h */; };
+		B20D107D17C02F4300C532C0 /* CloudFormationResponseUnmarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D103817C02F4300C532C0 /* CloudFormationResponseUnmarshaller.h */; };
+		B20D107E17C02F4300C532C0 /* CloudFormationStack.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D103917C02F4300C532C0 /* CloudFormationStack.h */; };
+		B20D107F17C02F4300C532C0 /* CloudFormationStackEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D103A17C02F4300C532C0 /* CloudFormationStackEvent.h */; };
+		B20D108017C02F4300C532C0 /* CloudFormationStackResource.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D103B17C02F4300C532C0 /* CloudFormationStackResource.h */; };
+		B20D108117C02F4300C532C0 /* CloudFormationStackResourceDetail.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D103C17C02F4300C532C0 /* CloudFormationStackResourceDetail.h */; };
+		B20D108217C02F4300C532C0 /* CloudFormationStackResourceSummary.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D103D17C02F4300C532C0 /* CloudFormationStackResourceSummary.h */; };
+		B20D108317C02F4300C532C0 /* CloudFormationStackSummary.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D103E17C02F4300C532C0 /* CloudFormationStackSummary.h */; };
+		B20D108417C02F4300C532C0 /* CloudFormationTag.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D103F17C02F4300C532C0 /* CloudFormationTag.h */; };
+		B20D108617C02F4300C532C0 /* CloudFormationTemplateParameter.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D104117C02F4300C532C0 /* CloudFormationTemplateParameter.h */; };
+		B20D108717C02F4300C532C0 /* CloudFormationUpdateStackRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D104217C02F4300C532C0 /* CloudFormationUpdateStackRequest.h */; };
+		B20D108817C02F4300C532C0 /* CloudFormationUpdateStackRequestMarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D104317C02F4300C532C0 /* CloudFormationUpdateStackRequestMarshaller.h */; };
+		B20D108917C02F4300C532C0 /* CloudFormationUpdateStackResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D104417C02F4300C532C0 /* CloudFormationUpdateStackResponse.h */; };
+		B20D108A17C02F4300C532C0 /* CloudFormationUpdateStackResponseUnmarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D104517C02F4300C532C0 /* CloudFormationUpdateStackResponseUnmarshaller.h */; };
+		B20D108B17C02F4300C532C0 /* CloudFormationValidateTemplateRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D104617C02F4300C532C0 /* CloudFormationValidateTemplateRequest.h */; };
+		B20D108C17C02F4300C532C0 /* CloudFormationValidateTemplateRequestMarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D104717C02F4300C532C0 /* CloudFormationValidateTemplateRequestMarshaller.h */; };
+		B20D108D17C02F4300C532C0 /* CloudFormationValidateTemplateResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D104817C02F4300C532C0 /* CloudFormationValidateTemplateResponse.h */; };
+		B20D108E17C02F4300C532C0 /* CloudFormationValidateTemplateResponseUnmarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B20D104917C02F4300C532C0 /* CloudFormationValidateTemplateResponseUnmarshaller.h */; };
+		B20D109317C02FFB00C532C0 /* AmazonCloudFormationClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D108F17C02FFB00C532C0 /* AmazonCloudFormationClient.m */; };
+		B20D109417C02FFB00C532C0 /* CloudFormationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D109017C02FFB00C532C0 /* CloudFormationRequest.m */; };
+		B20D109517C02FFB00C532C0 /* CloudFormationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D109117C02FFB00C532C0 /* CloudFormationResponse.m */; };
+		B20D109617C02FFB00C532C0 /* CloudFormationResponseUnmarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D109217C02FFB00C532C0 /* CloudFormationResponseUnmarshaller.m */; };
+		B20D10D517C0303C00C532C0 /* CloudFormationCancelUpdateStackRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D109717C0303B00C532C0 /* CloudFormationCancelUpdateStackRequest.m */; };
+		B20D10D617C0303C00C532C0 /* CloudFormationCancelUpdateStackRequestMarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D109817C0303B00C532C0 /* CloudFormationCancelUpdateStackRequestMarshaller.m */; };
+		B20D10D717C0303C00C532C0 /* CloudFormationCancelUpdateStackResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D109917C0303B00C532C0 /* CloudFormationCancelUpdateStackResponse.m */; };
+		B20D10D817C0303C00C532C0 /* CloudFormationCancelUpdateStackResponseUnmarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D109A17C0303B00C532C0 /* CloudFormationCancelUpdateStackResponseUnmarshaller.m */; };
+		B20D10D917C0303C00C532C0 /* CloudFormationCreateStackRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D109B17C0303B00C532C0 /* CloudFormationCreateStackRequest.m */; };
+		B20D10DA17C0303C00C532C0 /* CloudFormationCreateStackRequestMarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D109C17C0303B00C532C0 /* CloudFormationCreateStackRequestMarshaller.m */; };
+		B20D10DB17C0303C00C532C0 /* CloudFormationCreateStackResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D109D17C0303B00C532C0 /* CloudFormationCreateStackResponse.m */; };
+		B20D10DC17C0303C00C532C0 /* CloudFormationCreateStackResponseUnmarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D109E17C0303B00C532C0 /* CloudFormationCreateStackResponseUnmarshaller.m */; };
+		B20D10DD17C0303C00C532C0 /* CloudFormationDeleteStackRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D109F17C0303B00C532C0 /* CloudFormationDeleteStackRequest.m */; };
+		B20D10DE17C0303C00C532C0 /* CloudFormationDeleteStackRequestMarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10A017C0303B00C532C0 /* CloudFormationDeleteStackRequestMarshaller.m */; };
+		B20D10DF17C0303C00C532C0 /* CloudFormationDeleteStackResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10A117C0303B00C532C0 /* CloudFormationDeleteStackResponse.m */; };
+		B20D10E017C0303C00C532C0 /* CloudFormationDeleteStackResponseUnmarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10A217C0303B00C532C0 /* CloudFormationDeleteStackResponseUnmarshaller.m */; };
+		B20D10E117C0303C00C532C0 /* CloudFormationDescribeStackEventsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10A317C0303B00C532C0 /* CloudFormationDescribeStackEventsRequest.m */; };
+		B20D10E217C0303C00C532C0 /* CloudFormationDescribeStackEventsRequestMarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10A417C0303B00C532C0 /* CloudFormationDescribeStackEventsRequestMarshaller.m */; };
+		B20D10E317C0303C00C532C0 /* CloudFormationDescribeStackEventsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10A517C0303B00C532C0 /* CloudFormationDescribeStackEventsResponse.m */; };
+		B20D10E417C0303C00C532C0 /* CloudFormationDescribeStackEventsResponseUnmarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10A617C0303B00C532C0 /* CloudFormationDescribeStackEventsResponseUnmarshaller.m */; };
+		B20D10E517C0303C00C532C0 /* CloudFormationDescribeStackResourceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10A717C0303B00C532C0 /* CloudFormationDescribeStackResourceRequest.m */; };
+		B20D10E617C0303C00C532C0 /* CloudFormationDescribeStackResourceRequestMarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10A817C0303B00C532C0 /* CloudFormationDescribeStackResourceRequestMarshaller.m */; };
+		B20D10E717C0303C00C532C0 /* CloudFormationDescribeStackResourceResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10A917C0303B00C532C0 /* CloudFormationDescribeStackResourceResponse.m */; };
+		B20D10E817C0303C00C532C0 /* CloudFormationDescribeStackResourceResponseUnmarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10AA17C0303B00C532C0 /* CloudFormationDescribeStackResourceResponseUnmarshaller.m */; };
+		B20D10E917C0303C00C532C0 /* CloudFormationDescribeStackResourcesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10AB17C0303B00C532C0 /* CloudFormationDescribeStackResourcesRequest.m */; };
+		B20D10EA17C0303C00C532C0 /* CloudFormationDescribeStackResourcesRequestMarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10AC17C0303B00C532C0 /* CloudFormationDescribeStackResourcesRequestMarshaller.m */; };
+		B20D10EB17C0303C00C532C0 /* CloudFormationDescribeStackResourcesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10AD17C0303B00C532C0 /* CloudFormationDescribeStackResourcesResponse.m */; };
+		B20D10EC17C0303C00C532C0 /* CloudFormationDescribeStackResourcesResponseUnmarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10AE17C0303B00C532C0 /* CloudFormationDescribeStackResourcesResponseUnmarshaller.m */; };
+		B20D10ED17C0303C00C532C0 /* CloudFormationDescribeStacksRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10AF17C0303B00C532C0 /* CloudFormationDescribeStacksRequest.m */; };
+		B20D10EE17C0303C00C532C0 /* CloudFormationDescribeStacksRequestMarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10B017C0303B00C532C0 /* CloudFormationDescribeStacksRequestMarshaller.m */; };
+		B20D10EF17C0303C00C532C0 /* CloudFormationDescribeStacksResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10B117C0303B00C532C0 /* CloudFormationDescribeStacksResponse.m */; };
+		B20D10F017C0303C00C532C0 /* CloudFormationDescribeStacksResponseUnmarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10B217C0303B00C532C0 /* CloudFormationDescribeStacksResponseUnmarshaller.m */; };
+		B20D10F117C0303C00C532C0 /* CloudFormationEstimateTemplateCostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10B317C0303B00C532C0 /* CloudFormationEstimateTemplateCostRequest.m */; };
+		B20D10F217C0303C00C532C0 /* CloudFormationEstimateTemplateCostRequestMarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10B417C0303B00C532C0 /* CloudFormationEstimateTemplateCostRequestMarshaller.m */; };
+		B20D10F317C0303C00C532C0 /* CloudFormationEstimateTemplateCostResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10B517C0303B00C532C0 /* CloudFormationEstimateTemplateCostResponse.m */; };
+		B20D10F417C0303C00C532C0 /* CloudFormationEstimateTemplateCostResponseUnmarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10B617C0303B00C532C0 /* CloudFormationEstimateTemplateCostResponseUnmarshaller.m */; };
+		B20D10F517C0303C00C532C0 /* CloudFormationGetTemplateRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10B717C0303B00C532C0 /* CloudFormationGetTemplateRequest.m */; };
+		B20D10F617C0303C00C532C0 /* CloudFormationGetTemplateRequestMarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10B817C0303B00C532C0 /* CloudFormationGetTemplateRequestMarshaller.m */; };
+		B20D10F717C0303C00C532C0 /* CloudFormationGetTemplateResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10B917C0303B00C532C0 /* CloudFormationGetTemplateResponse.m */; };
+		B20D10F817C0303C00C532C0 /* CloudFormationGetTemplateResponseUnmarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10BA17C0303B00C532C0 /* CloudFormationGetTemplateResponseUnmarshaller.m */; };
+		B20D10F917C0303C00C532C0 /* CloudFormationListStackResourcesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10BB17C0303B00C532C0 /* CloudFormationListStackResourcesRequest.m */; };
+		B20D10FA17C0303C00C532C0 /* CloudFormationListStackResourcesRequestMarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10BC17C0303B00C532C0 /* CloudFormationListStackResourcesRequestMarshaller.m */; };
+		B20D10FB17C0303C00C532C0 /* CloudFormationListStackResourcesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10BD17C0303B00C532C0 /* CloudFormationListStackResourcesResponse.m */; };
+		B20D10FC17C0303C00C532C0 /* CloudFormationListStackResourcesResponseUnmarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10BE17C0303B00C532C0 /* CloudFormationListStackResourcesResponseUnmarshaller.m */; };
+		B20D10FD17C0303C00C532C0 /* CloudFormationListStacksRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10BF17C0303B00C532C0 /* CloudFormationListStacksRequest.m */; };
+		B20D10FE17C0303C00C532C0 /* CloudFormationListStacksRequestMarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10C017C0303B00C532C0 /* CloudFormationListStacksRequestMarshaller.m */; };
+		B20D10FF17C0303C00C532C0 /* CloudFormationListStacksResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10C117C0303C00C532C0 /* CloudFormationListStacksResponse.m */; };
+		B20D110017C0303C00C532C0 /* CloudFormationListStacksResponseUnmarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10C217C0303C00C532C0 /* CloudFormationListStacksResponseUnmarshaller.m */; };
+		B20D110117C0303C00C532C0 /* CloudFormationOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10C317C0303C00C532C0 /* CloudFormationOutput.m */; };
+		B20D110217C0303C00C532C0 /* CloudFormationParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10C417C0303C00C532C0 /* CloudFormationParameter.m */; };
+		B20D110317C0303C00C532C0 /* CloudFormationStack.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10C517C0303C00C532C0 /* CloudFormationStack.m */; };
+		B20D110417C0303C00C532C0 /* CloudFormationStackEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10C617C0303C00C532C0 /* CloudFormationStackEvent.m */; };
+		B20D110517C0303C00C532C0 /* CloudFormationStackResource.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10C717C0303C00C532C0 /* CloudFormationStackResource.m */; };
+		B20D110617C0303C00C532C0 /* CloudFormationStackResourceDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10C817C0303C00C532C0 /* CloudFormationStackResourceDetail.m */; };
+		B20D110717C0303C00C532C0 /* CloudFormationStackResourceSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10C917C0303C00C532C0 /* CloudFormationStackResourceSummary.m */; };
+		B20D110817C0303C00C532C0 /* CloudFormationStackSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10CA17C0303C00C532C0 /* CloudFormationStackSummary.m */; };
+		B20D110917C0303C00C532C0 /* CloudFormationTag.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10CB17C0303C00C532C0 /* CloudFormationTag.m */; };
+		B20D110A17C0303C00C532C0 /* CloudFormationTemplateParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10CC17C0303C00C532C0 /* CloudFormationTemplateParameter.m */; };
+		B20D110B17C0303C00C532C0 /* CloudFormationUpdateStackRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10CD17C0303C00C532C0 /* CloudFormationUpdateStackRequest.m */; };
+		B20D110C17C0303C00C532C0 /* CloudFormationUpdateStackRequestMarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10CE17C0303C00C532C0 /* CloudFormationUpdateStackRequestMarshaller.m */; };
+		B20D110D17C0303C00C532C0 /* CloudFormationUpdateStackResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10CF17C0303C00C532C0 /* CloudFormationUpdateStackResponse.m */; };
+		B20D110E17C0303C00C532C0 /* CloudFormationUpdateStackResponseUnmarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10D017C0303C00C532C0 /* CloudFormationUpdateStackResponseUnmarshaller.m */; };
+		B20D110F17C0303C00C532C0 /* CloudFormationValidateTemplateRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10D117C0303C00C532C0 /* CloudFormationValidateTemplateRequest.m */; };
+		B20D111017C0303C00C532C0 /* CloudFormationValidateTemplateRequestMarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10D217C0303C00C532C0 /* CloudFormationValidateTemplateRequestMarshaller.m */; };
+		B20D111117C0303C00C532C0 /* CloudFormationValidateTemplateResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10D317C0303C00C532C0 /* CloudFormationValidateTemplateResponse.m */; };
+		B20D111217C0303C00C532C0 /* CloudFormationValidateTemplateResponseUnmarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B20D10D417C0303C00C532C0 /* CloudFormationValidateTemplateResponseUnmarshaller.m */; };
+		B2270F1C17C0D77500A858AB /* CloudFormationAlreadyExistsException.m in Sources */ = {isa = PBXBuildFile; fileRef = B2270F1B17C0D77500A858AB /* CloudFormationAlreadyExistsException.m */; };
+		B2270F1F17C0D77F00A858AB /* CloudFormationInsufficientCapabilitiesException.m in Sources */ = {isa = PBXBuildFile; fileRef = B2270F1D17C0D77F00A858AB /* CloudFormationInsufficientCapabilitiesException.m */; };
+		B2270F2017C0D77F00A858AB /* CloudFormationLimitExceededException.m in Sources */ = {isa = PBXBuildFile; fileRef = B2270F1E17C0D77F00A858AB /* CloudFormationLimitExceededException.m */; };
+		B2270F2417C0D79D00A858AB /* CloudFormationAlreadyExistsException.h in Headers */ = {isa = PBXBuildFile; fileRef = B2270F2117C0D79D00A858AB /* CloudFormationAlreadyExistsException.h */; };
+		B2270F2517C0D79D00A858AB /* CloudFormationInsufficientCapabilitiesException.h in Headers */ = {isa = PBXBuildFile; fileRef = B2270F2217C0D79D00A858AB /* CloudFormationInsufficientCapabilitiesException.h */; };
+		B2270F2617C0D79D00A858AB /* CloudFormationLimitExceededException.h in Headers */ = {isa = PBXBuildFile; fileRef = B2270F2317C0D79D00A858AB /* CloudFormationLimitExceededException.h */; };
+		B2270F2817C0D81C00A858AB /* CloudFormationStackEventUnmarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B2270F2717C0D81C00A858AB /* CloudFormationStackEventUnmarshaller.h */; };
+		B2270F2A17C0D87800A858AB /* CloudFormationStackEventUnmarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B2270F2917C0D87800A858AB /* CloudFormationStackEventUnmarshaller.m */; };
+		B2270F2C17C0D8D000A858AB /* CloudFormationStackResourceUnmarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B2270F2B17C0D8D000A858AB /* CloudFormationStackResourceUnmarshaller.h */; };
+		B2270F2E17C0D8F200A858AB /* CloudFormationStackResourceUnmarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B2270F2D17C0D8F200A858AB /* CloudFormationStackResourceUnmarshaller.m */; };
+		B2270F3017C0D94E00A858AB /* CloudFormationStackUnmarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B2270F2F17C0D94E00A858AB /* CloudFormationStackUnmarshaller.h */; };
+		B2270F3217C0D96E00A858AB /* CloudFormationStackResourceSummaryUnmarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B2270F3117C0D96E00A858AB /* CloudFormationStackResourceSummaryUnmarshaller.h */; };
+		B2270F3417C0D98A00A858AB /* CloudFormationStackUnmarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B2270F3317C0D98A00A858AB /* CloudFormationStackUnmarshaller.m */; };
+		B2270F3617C0D9A300A858AB /* CloudFormationStackResourceSummaryUnmarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B2270F3517C0D9A300A858AB /* CloudFormationStackResourceSummaryUnmarshaller.m */; };
+		B2270F3817C0D9F300A858AB /* CloudFormationTemplateParameterUnmarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B2270F3717C0D9F300A858AB /* CloudFormationTemplateParameterUnmarshaller.h */; };
+		B2270F3A17C0DA1000A858AB /* CloudFormationTemplateParameterUnmarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B2270F3917C0DA1000A858AB /* CloudFormationTemplateParameterUnmarshaller.m */; };
+		B2270F3C17C0DBF200A858AB /* CloudFormationStackSummaryUnmarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B2270F3B17C0DBF200A858AB /* CloudFormationStackSummaryUnmarshaller.h */; };
+		B23ABB2617C0E8F500CE41C9 /* CloudFormationStackSummaryUnmarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B23ABB2517C0E8F400CE41C9 /* CloudFormationStackSummaryUnmarshaller.m */; };
+		B2C29C3817C0F4D100F840BE /* CloudFormationOutputUnmarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C29C3717C0F4D100F840BE /* CloudFormationOutputUnmarshaller.h */; };
+		B2C29C3A17C0F4DE00F840BE /* CloudFormationParameterUnmarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C29C3917C0F4DE00F840BE /* CloudFormationParameterUnmarshaller.h */; };
+		B2C29C3C17C0F4EE00F840BE /* CloudFormationStackResourceDetailUnmarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C29C3B17C0F4EE00F840BE /* CloudFormationStackResourceDetailUnmarshaller.h */; };
+		B2C29C3E17C0F58900F840BE /* CloudFormationTagUnmarshaller.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C29C3D17C0F58900F840BE /* CloudFormationTagUnmarshaller.h */; };
+		B2C29C4017C0F5F700F840BE /* CloudFormationOutputUnmarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C29C3F17C0F5F600F840BE /* CloudFormationOutputUnmarshaller.m */; };
+		B2C29C4217C0F60500F840BE /* CloudFormationParameterUnmarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C29C4117C0F60500F840BE /* CloudFormationParameterUnmarshaller.m */; };
+		B2C29C4417C0F61300F840BE /* CloudFormationStackResourceDetailUnmarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C29C4317C0F61300F840BE /* CloudFormationStackResourceDetailUnmarshaller.m */; };
+		B2C29C4617C0F61F00F840BE /* CloudFormationTagUnmarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C29C4517C0F61F00F840BE /* CloudFormationTagUnmarshaller.m */; };
 		C416BD1216BCA24A00B0290C /* EC2CopySnapshotRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C416BD0E16BCA24A00B0290C /* EC2CopySnapshotRequest.m */; };
 		C416BD1316BCA24A00B0290C /* EC2CopySnapshotRequestMarshaller.m in Sources */ = {isa = PBXBuildFile; fileRef = C416BD0F16BCA24A00B0290C /* EC2CopySnapshotRequestMarshaller.m */; };
 		C416BD1416BCA24A00B0290C /* EC2CopySnapshotResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C416BD1016BCA24A00B0290C /* EC2CopySnapshotResponse.m */; };
@@ -5864,6 +6023,165 @@
 		38FFA9AD16DEC58200CB3B82 /* S3PutObjectOperation_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = S3PutObjectOperation_Internal.h; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* AWSiOSSDK_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWSiOSSDK_Prefix.pch; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B20D100517C02F4200C532C0 /* AmazonCloudFormationClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AmazonCloudFormationClient.h; path = CloudFormation/AmazonCloudFormationClient.h; sourceTree = "<group>"; };
+		B20D100617C02F4200C532C0 /* AWSCloudFormation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWSCloudFormation.h; path = CloudFormation/AWSCloudFormation.h; sourceTree = "<group>"; };
+		B20D100717C02F4200C532C0 /* CloudFormationCancelUpdateStackRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationCancelUpdateStackRequest.h; path = CloudFormation/CloudFormationCancelUpdateStackRequest.h; sourceTree = "<group>"; };
+		B20D100817C02F4200C532C0 /* CloudFormationCancelUpdateStackRequestMarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationCancelUpdateStackRequestMarshaller.h; path = CloudFormation/CloudFormationCancelUpdateStackRequestMarshaller.h; sourceTree = "<group>"; };
+		B20D100917C02F4200C532C0 /* CloudFormationCancelUpdateStackResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationCancelUpdateStackResponse.h; path = CloudFormation/CloudFormationCancelUpdateStackResponse.h; sourceTree = "<group>"; };
+		B20D100A17C02F4200C532C0 /* CloudFormationCancelUpdateStackResponseUnmarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationCancelUpdateStackResponseUnmarshaller.h; path = CloudFormation/CloudFormationCancelUpdateStackResponseUnmarshaller.h; sourceTree = "<group>"; };
+		B20D100B17C02F4200C532C0 /* CloudFormationCreateStackRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationCreateStackRequest.h; path = CloudFormation/CloudFormationCreateStackRequest.h; sourceTree = "<group>"; };
+		B20D100C17C02F4200C532C0 /* CloudFormationCreateStackRequestMarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationCreateStackRequestMarshaller.h; path = CloudFormation/CloudFormationCreateStackRequestMarshaller.h; sourceTree = "<group>"; };
+		B20D100D17C02F4200C532C0 /* CloudFormationCreateStackResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationCreateStackResponse.h; path = CloudFormation/CloudFormationCreateStackResponse.h; sourceTree = "<group>"; };
+		B20D100E17C02F4200C532C0 /* CloudFormationCreateStackResponseUnmarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationCreateStackResponseUnmarshaller.h; path = CloudFormation/CloudFormationCreateStackResponseUnmarshaller.h; sourceTree = "<group>"; };
+		B20D100F17C02F4200C532C0 /* CloudFormationDeleteStackRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationDeleteStackRequest.h; path = CloudFormation/CloudFormationDeleteStackRequest.h; sourceTree = "<group>"; };
+		B20D101017C02F4200C532C0 /* CloudFormationDeleteStackRequestMarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationDeleteStackRequestMarshaller.h; path = CloudFormation/CloudFormationDeleteStackRequestMarshaller.h; sourceTree = "<group>"; };
+		B20D101117C02F4200C532C0 /* CloudFormationDeleteStackResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationDeleteStackResponse.h; path = CloudFormation/CloudFormationDeleteStackResponse.h; sourceTree = "<group>"; };
+		B20D101217C02F4200C532C0 /* CloudFormationDeleteStackResponseUnmarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationDeleteStackResponseUnmarshaller.h; path = CloudFormation/CloudFormationDeleteStackResponseUnmarshaller.h; sourceTree = "<group>"; };
+		B20D101317C02F4200C532C0 /* CloudFormationDescribeStackEventsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationDescribeStackEventsRequest.h; path = CloudFormation/CloudFormationDescribeStackEventsRequest.h; sourceTree = "<group>"; };
+		B20D101417C02F4200C532C0 /* CloudFormationDescribeStackEventsRequestMarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationDescribeStackEventsRequestMarshaller.h; path = CloudFormation/CloudFormationDescribeStackEventsRequestMarshaller.h; sourceTree = "<group>"; };
+		B20D101517C02F4200C532C0 /* CloudFormationDescribeStackEventsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationDescribeStackEventsResponse.h; path = CloudFormation/CloudFormationDescribeStackEventsResponse.h; sourceTree = "<group>"; };
+		B20D101617C02F4200C532C0 /* CloudFormationDescribeStackEventsResponseUnmarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationDescribeStackEventsResponseUnmarshaller.h; path = CloudFormation/CloudFormationDescribeStackEventsResponseUnmarshaller.h; sourceTree = "<group>"; };
+		B20D101717C02F4200C532C0 /* CloudFormationDescribeStackResourceRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationDescribeStackResourceRequest.h; path = CloudFormation/CloudFormationDescribeStackResourceRequest.h; sourceTree = "<group>"; };
+		B20D101817C02F4200C532C0 /* CloudFormationDescribeStackResourceRequestMarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationDescribeStackResourceRequestMarshaller.h; path = CloudFormation/CloudFormationDescribeStackResourceRequestMarshaller.h; sourceTree = "<group>"; };
+		B20D101917C02F4200C532C0 /* CloudFormationDescribeStackResourceResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationDescribeStackResourceResponse.h; path = CloudFormation/CloudFormationDescribeStackResourceResponse.h; sourceTree = "<group>"; };
+		B20D101A17C02F4200C532C0 /* CloudFormationDescribeStackResourceResponseUnmarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationDescribeStackResourceResponseUnmarshaller.h; path = CloudFormation/CloudFormationDescribeStackResourceResponseUnmarshaller.h; sourceTree = "<group>"; };
+		B20D101B17C02F4200C532C0 /* CloudFormationDescribeStackResourcesRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationDescribeStackResourcesRequest.h; path = CloudFormation/CloudFormationDescribeStackResourcesRequest.h; sourceTree = "<group>"; };
+		B20D101C17C02F4200C532C0 /* CloudFormationDescribeStackResourcesRequestMarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationDescribeStackResourcesRequestMarshaller.h; path = CloudFormation/CloudFormationDescribeStackResourcesRequestMarshaller.h; sourceTree = "<group>"; };
+		B20D101D17C02F4200C532C0 /* CloudFormationDescribeStackResourcesResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationDescribeStackResourcesResponse.h; path = CloudFormation/CloudFormationDescribeStackResourcesResponse.h; sourceTree = "<group>"; };
+		B20D101E17C02F4200C532C0 /* CloudFormationDescribeStackResourcesResponseUnmarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationDescribeStackResourcesResponseUnmarshaller.h; path = CloudFormation/CloudFormationDescribeStackResourcesResponseUnmarshaller.h; sourceTree = "<group>"; };
+		B20D101F17C02F4200C532C0 /* CloudFormationDescribeStacksRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationDescribeStacksRequest.h; path = CloudFormation/CloudFormationDescribeStacksRequest.h; sourceTree = "<group>"; };
+		B20D102017C02F4200C532C0 /* CloudFormationDescribeStacksRequestMarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationDescribeStacksRequestMarshaller.h; path = CloudFormation/CloudFormationDescribeStacksRequestMarshaller.h; sourceTree = "<group>"; };
+		B20D102117C02F4200C532C0 /* CloudFormationDescribeStacksResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationDescribeStacksResponse.h; path = CloudFormation/CloudFormationDescribeStacksResponse.h; sourceTree = "<group>"; };
+		B20D102217C02F4200C532C0 /* CloudFormationDescribeStacksResponseUnmarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationDescribeStacksResponseUnmarshaller.h; path = CloudFormation/CloudFormationDescribeStacksResponseUnmarshaller.h; sourceTree = "<group>"; };
+		B20D102317C02F4200C532C0 /* CloudFormationEstimateTemplateCostRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationEstimateTemplateCostRequest.h; path = CloudFormation/CloudFormationEstimateTemplateCostRequest.h; sourceTree = "<group>"; };
+		B20D102417C02F4200C532C0 /* CloudFormationEstimateTemplateCostRequestMarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationEstimateTemplateCostRequestMarshaller.h; path = CloudFormation/CloudFormationEstimateTemplateCostRequestMarshaller.h; sourceTree = "<group>"; };
+		B20D102517C02F4200C532C0 /* CloudFormationEstimateTemplateCostResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationEstimateTemplateCostResponse.h; path = CloudFormation/CloudFormationEstimateTemplateCostResponse.h; sourceTree = "<group>"; };
+		B20D102617C02F4200C532C0 /* CloudFormationEstimateTemplateCostResponseUnmarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationEstimateTemplateCostResponseUnmarshaller.h; path = CloudFormation/CloudFormationEstimateTemplateCostResponseUnmarshaller.h; sourceTree = "<group>"; };
+		B20D102717C02F4200C532C0 /* CloudFormationGetTemplateRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationGetTemplateRequest.h; path = CloudFormation/CloudFormationGetTemplateRequest.h; sourceTree = "<group>"; };
+		B20D102817C02F4200C532C0 /* CloudFormationGetTemplateRequestMarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationGetTemplateRequestMarshaller.h; path = CloudFormation/CloudFormationGetTemplateRequestMarshaller.h; sourceTree = "<group>"; };
+		B20D102917C02F4200C532C0 /* CloudFormationGetTemplateResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationGetTemplateResponse.h; path = CloudFormation/CloudFormationGetTemplateResponse.h; sourceTree = "<group>"; };
+		B20D102A17C02F4200C532C0 /* CloudFormationGetTemplateResponseUnmarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationGetTemplateResponseUnmarshaller.h; path = CloudFormation/CloudFormationGetTemplateResponseUnmarshaller.h; sourceTree = "<group>"; };
+		B20D102B17C02F4300C532C0 /* CloudFormationListStackResourcesRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationListStackResourcesRequest.h; path = CloudFormation/CloudFormationListStackResourcesRequest.h; sourceTree = "<group>"; };
+		B20D102C17C02F4300C532C0 /* CloudFormationListStackResourcesRequestMarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationListStackResourcesRequestMarshaller.h; path = CloudFormation/CloudFormationListStackResourcesRequestMarshaller.h; sourceTree = "<group>"; };
+		B20D102D17C02F4300C532C0 /* CloudFormationListStackResourcesResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationListStackResourcesResponse.h; path = CloudFormation/CloudFormationListStackResourcesResponse.h; sourceTree = "<group>"; };
+		B20D102E17C02F4300C532C0 /* CloudFormationListStackResourcesResponseUnmarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationListStackResourcesResponseUnmarshaller.h; path = CloudFormation/CloudFormationListStackResourcesResponseUnmarshaller.h; sourceTree = "<group>"; };
+		B20D102F17C02F4300C532C0 /* CloudFormationListStacksRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationListStacksRequest.h; path = CloudFormation/CloudFormationListStacksRequest.h; sourceTree = "<group>"; };
+		B20D103017C02F4300C532C0 /* CloudFormationListStacksRequestMarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationListStacksRequestMarshaller.h; path = CloudFormation/CloudFormationListStacksRequestMarshaller.h; sourceTree = "<group>"; };
+		B20D103117C02F4300C532C0 /* CloudFormationListStacksResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationListStacksResponse.h; path = CloudFormation/CloudFormationListStacksResponse.h; sourceTree = "<group>"; };
+		B20D103217C02F4300C532C0 /* CloudFormationListStacksResponseUnmarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationListStacksResponseUnmarshaller.h; path = CloudFormation/CloudFormationListStacksResponseUnmarshaller.h; sourceTree = "<group>"; };
+		B20D103317C02F4300C532C0 /* CloudFormationOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationOutput.h; path = CloudFormation/CloudFormationOutput.h; sourceTree = "<group>"; };
+		B20D103417C02F4300C532C0 /* CloudFormationParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationParameter.h; path = CloudFormation/CloudFormationParameter.h; sourceTree = "<group>"; };
+		B20D103617C02F4300C532C0 /* CloudFormationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationRequest.h; path = CloudFormation/CloudFormationRequest.h; sourceTree = "<group>"; };
+		B20D103717C02F4300C532C0 /* CloudFormationResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationResponse.h; path = CloudFormation/CloudFormationResponse.h; sourceTree = "<group>"; };
+		B20D103817C02F4300C532C0 /* CloudFormationResponseUnmarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationResponseUnmarshaller.h; path = CloudFormation/CloudFormationResponseUnmarshaller.h; sourceTree = "<group>"; };
+		B20D103917C02F4300C532C0 /* CloudFormationStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationStack.h; path = CloudFormation/CloudFormationStack.h; sourceTree = "<group>"; };
+		B20D103A17C02F4300C532C0 /* CloudFormationStackEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationStackEvent.h; path = CloudFormation/CloudFormationStackEvent.h; sourceTree = "<group>"; };
+		B20D103B17C02F4300C532C0 /* CloudFormationStackResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationStackResource.h; path = CloudFormation/CloudFormationStackResource.h; sourceTree = "<group>"; };
+		B20D103C17C02F4300C532C0 /* CloudFormationStackResourceDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationStackResourceDetail.h; path = CloudFormation/CloudFormationStackResourceDetail.h; sourceTree = "<group>"; };
+		B20D103D17C02F4300C532C0 /* CloudFormationStackResourceSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationStackResourceSummary.h; path = CloudFormation/CloudFormationStackResourceSummary.h; sourceTree = "<group>"; };
+		B20D103E17C02F4300C532C0 /* CloudFormationStackSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationStackSummary.h; path = CloudFormation/CloudFormationStackSummary.h; sourceTree = "<group>"; };
+		B20D103F17C02F4300C532C0 /* CloudFormationTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationTag.h; path = CloudFormation/CloudFormationTag.h; sourceTree = "<group>"; };
+		B20D104117C02F4300C532C0 /* CloudFormationTemplateParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationTemplateParameter.h; path = CloudFormation/CloudFormationTemplateParameter.h; sourceTree = "<group>"; };
+		B20D104217C02F4300C532C0 /* CloudFormationUpdateStackRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationUpdateStackRequest.h; path = CloudFormation/CloudFormationUpdateStackRequest.h; sourceTree = "<group>"; };
+		B20D104317C02F4300C532C0 /* CloudFormationUpdateStackRequestMarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationUpdateStackRequestMarshaller.h; path = CloudFormation/CloudFormationUpdateStackRequestMarshaller.h; sourceTree = "<group>"; };
+		B20D104417C02F4300C532C0 /* CloudFormationUpdateStackResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationUpdateStackResponse.h; path = CloudFormation/CloudFormationUpdateStackResponse.h; sourceTree = "<group>"; };
+		B20D104517C02F4300C532C0 /* CloudFormationUpdateStackResponseUnmarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationUpdateStackResponseUnmarshaller.h; path = CloudFormation/CloudFormationUpdateStackResponseUnmarshaller.h; sourceTree = "<group>"; };
+		B20D104617C02F4300C532C0 /* CloudFormationValidateTemplateRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationValidateTemplateRequest.h; path = CloudFormation/CloudFormationValidateTemplateRequest.h; sourceTree = "<group>"; };
+		B20D104717C02F4300C532C0 /* CloudFormationValidateTemplateRequestMarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationValidateTemplateRequestMarshaller.h; path = CloudFormation/CloudFormationValidateTemplateRequestMarshaller.h; sourceTree = "<group>"; };
+		B20D104817C02F4300C532C0 /* CloudFormationValidateTemplateResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationValidateTemplateResponse.h; path = CloudFormation/CloudFormationValidateTemplateResponse.h; sourceTree = "<group>"; };
+		B20D104917C02F4300C532C0 /* CloudFormationValidateTemplateResponseUnmarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationValidateTemplateResponseUnmarshaller.h; path = CloudFormation/CloudFormationValidateTemplateResponseUnmarshaller.h; sourceTree = "<group>"; };
+		B20D108F17C02FFB00C532C0 /* AmazonCloudFormationClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AmazonCloudFormationClient.m; path = Amazon.CloudFormation/AmazonCloudFormationClient.m; sourceTree = "<group>"; };
+		B20D109017C02FFB00C532C0 /* CloudFormationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationRequest.m; path = Amazon.CloudFormation/CloudFormationRequest.m; sourceTree = "<group>"; };
+		B20D109117C02FFB00C532C0 /* CloudFormationResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationResponse.m; path = Amazon.CloudFormation/CloudFormationResponse.m; sourceTree = "<group>"; };
+		B20D109217C02FFB00C532C0 /* CloudFormationResponseUnmarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationResponseUnmarshaller.m; path = Amazon.CloudFormation/CloudFormationResponseUnmarshaller.m; sourceTree = "<group>"; };
+		B20D109717C0303B00C532C0 /* CloudFormationCancelUpdateStackRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationCancelUpdateStackRequest.m; path = Amazon.CloudFormation/Model/CloudFormationCancelUpdateStackRequest.m; sourceTree = "<group>"; };
+		B20D109817C0303B00C532C0 /* CloudFormationCancelUpdateStackRequestMarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationCancelUpdateStackRequestMarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationCancelUpdateStackRequestMarshaller.m; sourceTree = "<group>"; };
+		B20D109917C0303B00C532C0 /* CloudFormationCancelUpdateStackResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationCancelUpdateStackResponse.m; path = Amazon.CloudFormation/Model/CloudFormationCancelUpdateStackResponse.m; sourceTree = "<group>"; };
+		B20D109A17C0303B00C532C0 /* CloudFormationCancelUpdateStackResponseUnmarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationCancelUpdateStackResponseUnmarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationCancelUpdateStackResponseUnmarshaller.m; sourceTree = "<group>"; };
+		B20D109B17C0303B00C532C0 /* CloudFormationCreateStackRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationCreateStackRequest.m; path = Amazon.CloudFormation/Model/CloudFormationCreateStackRequest.m; sourceTree = "<group>"; };
+		B20D109C17C0303B00C532C0 /* CloudFormationCreateStackRequestMarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationCreateStackRequestMarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationCreateStackRequestMarshaller.m; sourceTree = "<group>"; };
+		B20D109D17C0303B00C532C0 /* CloudFormationCreateStackResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationCreateStackResponse.m; path = Amazon.CloudFormation/Model/CloudFormationCreateStackResponse.m; sourceTree = "<group>"; };
+		B20D109E17C0303B00C532C0 /* CloudFormationCreateStackResponseUnmarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationCreateStackResponseUnmarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationCreateStackResponseUnmarshaller.m; sourceTree = "<group>"; };
+		B20D109F17C0303B00C532C0 /* CloudFormationDeleteStackRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationDeleteStackRequest.m; path = Amazon.CloudFormation/Model/CloudFormationDeleteStackRequest.m; sourceTree = "<group>"; };
+		B20D10A017C0303B00C532C0 /* CloudFormationDeleteStackRequestMarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationDeleteStackRequestMarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationDeleteStackRequestMarshaller.m; sourceTree = "<group>"; };
+		B20D10A117C0303B00C532C0 /* CloudFormationDeleteStackResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationDeleteStackResponse.m; path = Amazon.CloudFormation/Model/CloudFormationDeleteStackResponse.m; sourceTree = "<group>"; };
+		B20D10A217C0303B00C532C0 /* CloudFormationDeleteStackResponseUnmarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationDeleteStackResponseUnmarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationDeleteStackResponseUnmarshaller.m; sourceTree = "<group>"; };
+		B20D10A317C0303B00C532C0 /* CloudFormationDescribeStackEventsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationDescribeStackEventsRequest.m; path = Amazon.CloudFormation/Model/CloudFormationDescribeStackEventsRequest.m; sourceTree = "<group>"; };
+		B20D10A417C0303B00C532C0 /* CloudFormationDescribeStackEventsRequestMarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationDescribeStackEventsRequestMarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationDescribeStackEventsRequestMarshaller.m; sourceTree = "<group>"; };
+		B20D10A517C0303B00C532C0 /* CloudFormationDescribeStackEventsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationDescribeStackEventsResponse.m; path = Amazon.CloudFormation/Model/CloudFormationDescribeStackEventsResponse.m; sourceTree = "<group>"; };
+		B20D10A617C0303B00C532C0 /* CloudFormationDescribeStackEventsResponseUnmarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationDescribeStackEventsResponseUnmarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationDescribeStackEventsResponseUnmarshaller.m; sourceTree = "<group>"; };
+		B20D10A717C0303B00C532C0 /* CloudFormationDescribeStackResourceRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationDescribeStackResourceRequest.m; path = Amazon.CloudFormation/Model/CloudFormationDescribeStackResourceRequest.m; sourceTree = "<group>"; };
+		B20D10A817C0303B00C532C0 /* CloudFormationDescribeStackResourceRequestMarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationDescribeStackResourceRequestMarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationDescribeStackResourceRequestMarshaller.m; sourceTree = "<group>"; };
+		B20D10A917C0303B00C532C0 /* CloudFormationDescribeStackResourceResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationDescribeStackResourceResponse.m; path = Amazon.CloudFormation/Model/CloudFormationDescribeStackResourceResponse.m; sourceTree = "<group>"; };
+		B20D10AA17C0303B00C532C0 /* CloudFormationDescribeStackResourceResponseUnmarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationDescribeStackResourceResponseUnmarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationDescribeStackResourceResponseUnmarshaller.m; sourceTree = "<group>"; };
+		B20D10AB17C0303B00C532C0 /* CloudFormationDescribeStackResourcesRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationDescribeStackResourcesRequest.m; path = Amazon.CloudFormation/Model/CloudFormationDescribeStackResourcesRequest.m; sourceTree = "<group>"; };
+		B20D10AC17C0303B00C532C0 /* CloudFormationDescribeStackResourcesRequestMarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationDescribeStackResourcesRequestMarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationDescribeStackResourcesRequestMarshaller.m; sourceTree = "<group>"; };
+		B20D10AD17C0303B00C532C0 /* CloudFormationDescribeStackResourcesResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationDescribeStackResourcesResponse.m; path = Amazon.CloudFormation/Model/CloudFormationDescribeStackResourcesResponse.m; sourceTree = "<group>"; };
+		B20D10AE17C0303B00C532C0 /* CloudFormationDescribeStackResourcesResponseUnmarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationDescribeStackResourcesResponseUnmarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationDescribeStackResourcesResponseUnmarshaller.m; sourceTree = "<group>"; };
+		B20D10AF17C0303B00C532C0 /* CloudFormationDescribeStacksRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationDescribeStacksRequest.m; path = Amazon.CloudFormation/Model/CloudFormationDescribeStacksRequest.m; sourceTree = "<group>"; };
+		B20D10B017C0303B00C532C0 /* CloudFormationDescribeStacksRequestMarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationDescribeStacksRequestMarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationDescribeStacksRequestMarshaller.m; sourceTree = "<group>"; };
+		B20D10B117C0303B00C532C0 /* CloudFormationDescribeStacksResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationDescribeStacksResponse.m; path = Amazon.CloudFormation/Model/CloudFormationDescribeStacksResponse.m; sourceTree = "<group>"; };
+		B20D10B217C0303B00C532C0 /* CloudFormationDescribeStacksResponseUnmarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationDescribeStacksResponseUnmarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationDescribeStacksResponseUnmarshaller.m; sourceTree = "<group>"; };
+		B20D10B317C0303B00C532C0 /* CloudFormationEstimateTemplateCostRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationEstimateTemplateCostRequest.m; path = Amazon.CloudFormation/Model/CloudFormationEstimateTemplateCostRequest.m; sourceTree = "<group>"; };
+		B20D10B417C0303B00C532C0 /* CloudFormationEstimateTemplateCostRequestMarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationEstimateTemplateCostRequestMarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationEstimateTemplateCostRequestMarshaller.m; sourceTree = "<group>"; };
+		B20D10B517C0303B00C532C0 /* CloudFormationEstimateTemplateCostResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationEstimateTemplateCostResponse.m; path = Amazon.CloudFormation/Model/CloudFormationEstimateTemplateCostResponse.m; sourceTree = "<group>"; };
+		B20D10B617C0303B00C532C0 /* CloudFormationEstimateTemplateCostResponseUnmarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationEstimateTemplateCostResponseUnmarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationEstimateTemplateCostResponseUnmarshaller.m; sourceTree = "<group>"; };
+		B20D10B717C0303B00C532C0 /* CloudFormationGetTemplateRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationGetTemplateRequest.m; path = Amazon.CloudFormation/Model/CloudFormationGetTemplateRequest.m; sourceTree = "<group>"; };
+		B20D10B817C0303B00C532C0 /* CloudFormationGetTemplateRequestMarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationGetTemplateRequestMarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationGetTemplateRequestMarshaller.m; sourceTree = "<group>"; };
+		B20D10B917C0303B00C532C0 /* CloudFormationGetTemplateResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationGetTemplateResponse.m; path = Amazon.CloudFormation/Model/CloudFormationGetTemplateResponse.m; sourceTree = "<group>"; };
+		B20D10BA17C0303B00C532C0 /* CloudFormationGetTemplateResponseUnmarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationGetTemplateResponseUnmarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationGetTemplateResponseUnmarshaller.m; sourceTree = "<group>"; };
+		B20D10BB17C0303B00C532C0 /* CloudFormationListStackResourcesRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationListStackResourcesRequest.m; path = Amazon.CloudFormation/Model/CloudFormationListStackResourcesRequest.m; sourceTree = "<group>"; };
+		B20D10BC17C0303B00C532C0 /* CloudFormationListStackResourcesRequestMarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationListStackResourcesRequestMarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationListStackResourcesRequestMarshaller.m; sourceTree = "<group>"; };
+		B20D10BD17C0303B00C532C0 /* CloudFormationListStackResourcesResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationListStackResourcesResponse.m; path = Amazon.CloudFormation/Model/CloudFormationListStackResourcesResponse.m; sourceTree = "<group>"; };
+		B20D10BE17C0303B00C532C0 /* CloudFormationListStackResourcesResponseUnmarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationListStackResourcesResponseUnmarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationListStackResourcesResponseUnmarshaller.m; sourceTree = "<group>"; };
+		B20D10BF17C0303B00C532C0 /* CloudFormationListStacksRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationListStacksRequest.m; path = Amazon.CloudFormation/Model/CloudFormationListStacksRequest.m; sourceTree = "<group>"; };
+		B20D10C017C0303B00C532C0 /* CloudFormationListStacksRequestMarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationListStacksRequestMarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationListStacksRequestMarshaller.m; sourceTree = "<group>"; };
+		B20D10C117C0303C00C532C0 /* CloudFormationListStacksResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationListStacksResponse.m; path = Amazon.CloudFormation/Model/CloudFormationListStacksResponse.m; sourceTree = "<group>"; };
+		B20D10C217C0303C00C532C0 /* CloudFormationListStacksResponseUnmarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationListStacksResponseUnmarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationListStacksResponseUnmarshaller.m; sourceTree = "<group>"; };
+		B20D10C317C0303C00C532C0 /* CloudFormationOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationOutput.m; path = Amazon.CloudFormation/Model/CloudFormationOutput.m; sourceTree = "<group>"; };
+		B20D10C417C0303C00C532C0 /* CloudFormationParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationParameter.m; path = Amazon.CloudFormation/Model/CloudFormationParameter.m; sourceTree = "<group>"; };
+		B20D10C517C0303C00C532C0 /* CloudFormationStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationStack.m; path = Amazon.CloudFormation/Model/CloudFormationStack.m; sourceTree = "<group>"; };
+		B20D10C617C0303C00C532C0 /* CloudFormationStackEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationStackEvent.m; path = Amazon.CloudFormation/Model/CloudFormationStackEvent.m; sourceTree = "<group>"; };
+		B20D10C717C0303C00C532C0 /* CloudFormationStackResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationStackResource.m; path = Amazon.CloudFormation/Model/CloudFormationStackResource.m; sourceTree = "<group>"; };
+		B20D10C817C0303C00C532C0 /* CloudFormationStackResourceDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationStackResourceDetail.m; path = Amazon.CloudFormation/Model/CloudFormationStackResourceDetail.m; sourceTree = "<group>"; };
+		B20D10C917C0303C00C532C0 /* CloudFormationStackResourceSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationStackResourceSummary.m; path = Amazon.CloudFormation/Model/CloudFormationStackResourceSummary.m; sourceTree = "<group>"; };
+		B20D10CA17C0303C00C532C0 /* CloudFormationStackSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationStackSummary.m; path = Amazon.CloudFormation/Model/CloudFormationStackSummary.m; sourceTree = "<group>"; };
+		B20D10CB17C0303C00C532C0 /* CloudFormationTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationTag.m; path = Amazon.CloudFormation/Model/CloudFormationTag.m; sourceTree = "<group>"; };
+		B20D10CC17C0303C00C532C0 /* CloudFormationTemplateParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationTemplateParameter.m; path = Amazon.CloudFormation/Model/CloudFormationTemplateParameter.m; sourceTree = "<group>"; };
+		B20D10CD17C0303C00C532C0 /* CloudFormationUpdateStackRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationUpdateStackRequest.m; path = Amazon.CloudFormation/Model/CloudFormationUpdateStackRequest.m; sourceTree = "<group>"; };
+		B20D10CE17C0303C00C532C0 /* CloudFormationUpdateStackRequestMarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationUpdateStackRequestMarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationUpdateStackRequestMarshaller.m; sourceTree = "<group>"; };
+		B20D10CF17C0303C00C532C0 /* CloudFormationUpdateStackResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationUpdateStackResponse.m; path = Amazon.CloudFormation/Model/CloudFormationUpdateStackResponse.m; sourceTree = "<group>"; };
+		B20D10D017C0303C00C532C0 /* CloudFormationUpdateStackResponseUnmarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationUpdateStackResponseUnmarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationUpdateStackResponseUnmarshaller.m; sourceTree = "<group>"; };
+		B20D10D117C0303C00C532C0 /* CloudFormationValidateTemplateRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationValidateTemplateRequest.m; path = Amazon.CloudFormation/Model/CloudFormationValidateTemplateRequest.m; sourceTree = "<group>"; };
+		B20D10D217C0303C00C532C0 /* CloudFormationValidateTemplateRequestMarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationValidateTemplateRequestMarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationValidateTemplateRequestMarshaller.m; sourceTree = "<group>"; };
+		B20D10D317C0303C00C532C0 /* CloudFormationValidateTemplateResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationValidateTemplateResponse.m; path = Amazon.CloudFormation/Model/CloudFormationValidateTemplateResponse.m; sourceTree = "<group>"; };
+		B20D10D417C0303C00C532C0 /* CloudFormationValidateTemplateResponseUnmarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationValidateTemplateResponseUnmarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationValidateTemplateResponseUnmarshaller.m; sourceTree = "<group>"; };
+		B2270F1B17C0D77500A858AB /* CloudFormationAlreadyExistsException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationAlreadyExistsException.m; path = Amazon.CloudFormation/Model/CloudFormationAlreadyExistsException.m; sourceTree = "<group>"; };
+		B2270F1D17C0D77F00A858AB /* CloudFormationInsufficientCapabilitiesException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationInsufficientCapabilitiesException.m; path = Amazon.CloudFormation/Model/CloudFormationInsufficientCapabilitiesException.m; sourceTree = "<group>"; };
+		B2270F1E17C0D77F00A858AB /* CloudFormationLimitExceededException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationLimitExceededException.m; path = Amazon.CloudFormation/Model/CloudFormationLimitExceededException.m; sourceTree = "<group>"; };
+		B2270F2117C0D79D00A858AB /* CloudFormationAlreadyExistsException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationAlreadyExistsException.h; path = CloudFormation/CloudFormationAlreadyExistsException.h; sourceTree = "<group>"; };
+		B2270F2217C0D79D00A858AB /* CloudFormationInsufficientCapabilitiesException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationInsufficientCapabilitiesException.h; path = CloudFormation/CloudFormationInsufficientCapabilitiesException.h; sourceTree = "<group>"; };
+		B2270F2317C0D79D00A858AB /* CloudFormationLimitExceededException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationLimitExceededException.h; path = CloudFormation/CloudFormationLimitExceededException.h; sourceTree = "<group>"; };
+		B2270F2717C0D81C00A858AB /* CloudFormationStackEventUnmarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationStackEventUnmarshaller.h; path = CloudFormation/CloudFormationStackEventUnmarshaller.h; sourceTree = "<group>"; };
+		B2270F2917C0D87800A858AB /* CloudFormationStackEventUnmarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationStackEventUnmarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationStackEventUnmarshaller.m; sourceTree = "<group>"; };
+		B2270F2B17C0D8D000A858AB /* CloudFormationStackResourceUnmarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationStackResourceUnmarshaller.h; path = CloudFormation/CloudFormationStackResourceUnmarshaller.h; sourceTree = "<group>"; };
+		B2270F2D17C0D8F200A858AB /* CloudFormationStackResourceUnmarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationStackResourceUnmarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationStackResourceUnmarshaller.m; sourceTree = "<group>"; };
+		B2270F2F17C0D94E00A858AB /* CloudFormationStackUnmarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationStackUnmarshaller.h; path = CloudFormation/CloudFormationStackUnmarshaller.h; sourceTree = "<group>"; };
+		B2270F3117C0D96E00A858AB /* CloudFormationStackResourceSummaryUnmarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationStackResourceSummaryUnmarshaller.h; path = CloudFormation/CloudFormationStackResourceSummaryUnmarshaller.h; sourceTree = "<group>"; };
+		B2270F3317C0D98A00A858AB /* CloudFormationStackUnmarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationStackUnmarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationStackUnmarshaller.m; sourceTree = "<group>"; };
+		B2270F3517C0D9A300A858AB /* CloudFormationStackResourceSummaryUnmarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationStackResourceSummaryUnmarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationStackResourceSummaryUnmarshaller.m; sourceTree = "<group>"; };
+		B2270F3717C0D9F300A858AB /* CloudFormationTemplateParameterUnmarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationTemplateParameterUnmarshaller.h; path = CloudFormation/CloudFormationTemplateParameterUnmarshaller.h; sourceTree = "<group>"; };
+		B2270F3917C0DA1000A858AB /* CloudFormationTemplateParameterUnmarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationTemplateParameterUnmarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationTemplateParameterUnmarshaller.m; sourceTree = "<group>"; };
+		B2270F3B17C0DBF200A858AB /* CloudFormationStackSummaryUnmarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationStackSummaryUnmarshaller.h; path = CloudFormation/CloudFormationStackSummaryUnmarshaller.h; sourceTree = "<group>"; };
+		B23ABB2517C0E8F400CE41C9 /* CloudFormationStackSummaryUnmarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationStackSummaryUnmarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationStackSummaryUnmarshaller.m; sourceTree = "<group>"; };
+		B2C29C3717C0F4D100F840BE /* CloudFormationOutputUnmarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationOutputUnmarshaller.h; path = CloudFormation/CloudFormationOutputUnmarshaller.h; sourceTree = "<group>"; };
+		B2C29C3917C0F4DE00F840BE /* CloudFormationParameterUnmarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationParameterUnmarshaller.h; path = CloudFormation/CloudFormationParameterUnmarshaller.h; sourceTree = "<group>"; };
+		B2C29C3B17C0F4EE00F840BE /* CloudFormationStackResourceDetailUnmarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationStackResourceDetailUnmarshaller.h; path = CloudFormation/CloudFormationStackResourceDetailUnmarshaller.h; sourceTree = "<group>"; };
+		B2C29C3D17C0F58900F840BE /* CloudFormationTagUnmarshaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFormationTagUnmarshaller.h; path = CloudFormation/CloudFormationTagUnmarshaller.h; sourceTree = "<group>"; };
+		B2C29C3F17C0F5F600F840BE /* CloudFormationOutputUnmarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationOutputUnmarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationOutputUnmarshaller.m; sourceTree = "<group>"; };
+		B2C29C4117C0F60500F840BE /* CloudFormationParameterUnmarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationParameterUnmarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationParameterUnmarshaller.m; sourceTree = "<group>"; };
+		B2C29C4317C0F61300F840BE /* CloudFormationStackResourceDetailUnmarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationStackResourceDetailUnmarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationStackResourceDetailUnmarshaller.m; sourceTree = "<group>"; };
+		B2C29C4517C0F61F00F840BE /* CloudFormationTagUnmarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CloudFormationTagUnmarshaller.m; path = Amazon.CloudFormation/Model/CloudFormationTagUnmarshaller.m; sourceTree = "<group>"; };
 		C416BD0E16BCA24A00B0290C /* EC2CopySnapshotRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EC2CopySnapshotRequest.m; sourceTree = "<group>"; };
 		C416BD0F16BCA24A00B0290C /* EC2CopySnapshotRequestMarshaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EC2CopySnapshotRequestMarshaller.m; sourceTree = "<group>"; };
 		C416BD1016BCA24A00B0290C /* EC2CopySnapshotResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EC2CopySnapshotResponse.m; sourceTree = "<group>"; };
@@ -6641,6 +6959,7 @@
 			children = (
 				38EFE8FB161F54160069348B /* Amazon.AutoScaling */,
 				0AE6F15A12E4C0B700465F92 /* Amazon.CloudWatch */,
+				B20D100217C02D2500C532C0 /* Amazon.CloudFormation */,
 				CE45BD58170A57C000D1550D /* Amazon.DynamoDB_old */,
 				389F3934164D9E9000272BA2 /* Amazon.EC2 */,
 				D018B55F1358B634002D7716 /* Amazon.ElasticLoadBalancing */,
@@ -6921,6 +7240,7 @@
 				38EFEA87161F542C0069348B /* AmazonWebServiceClient.h */,
 				38EFEAA1161F543F0069348B /* AutoScaling */,
 				0AE6F1D412E4C0CB00465F92 /* CloudWatch */,
+				B20D100417C02D4E00C532C0 /* CloudFormation */,
 				CE45BE12170A57CE00D1550D /* DynamoDB_old */,
 				389F3D4E164D9E9F00272BA2 /* EC2 */,
 				D018B73E1358B65C002D7716 /* ElasticLoadBalancing */,
@@ -9579,6 +9899,187 @@
 			path = S3;
 			sourceTree = "<group>";
 		};
+		B20D100217C02D2500C532C0 /* Amazon.CloudFormation */ = {
+			isa = PBXGroup;
+			children = (
+				B20D108F17C02FFB00C532C0 /* AmazonCloudFormationClient.m */,
+				B20D109017C02FFB00C532C0 /* CloudFormationRequest.m */,
+				B20D109117C02FFB00C532C0 /* CloudFormationResponse.m */,
+				B20D109217C02FFB00C532C0 /* CloudFormationResponseUnmarshaller.m */,
+				B20D100317C02D4300C532C0 /* Model */,
+			);
+			name = Amazon.CloudFormation;
+			sourceTree = "<group>";
+		};
+		B20D100317C02D4300C532C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2270F1D17C0D77F00A858AB /* CloudFormationInsufficientCapabilitiesException.m */,
+				B2270F1E17C0D77F00A858AB /* CloudFormationLimitExceededException.m */,
+				B2270F1B17C0D77500A858AB /* CloudFormationAlreadyExistsException.m */,
+				B20D109717C0303B00C532C0 /* CloudFormationCancelUpdateStackRequest.m */,
+				B20D109817C0303B00C532C0 /* CloudFormationCancelUpdateStackRequestMarshaller.m */,
+				B20D109917C0303B00C532C0 /* CloudFormationCancelUpdateStackResponse.m */,
+				B20D109A17C0303B00C532C0 /* CloudFormationCancelUpdateStackResponseUnmarshaller.m */,
+				B20D109B17C0303B00C532C0 /* CloudFormationCreateStackRequest.m */,
+				B20D109C17C0303B00C532C0 /* CloudFormationCreateStackRequestMarshaller.m */,
+				B20D109D17C0303B00C532C0 /* CloudFormationCreateStackResponse.m */,
+				B20D109E17C0303B00C532C0 /* CloudFormationCreateStackResponseUnmarshaller.m */,
+				B20D109F17C0303B00C532C0 /* CloudFormationDeleteStackRequest.m */,
+				B20D10A017C0303B00C532C0 /* CloudFormationDeleteStackRequestMarshaller.m */,
+				B20D10A117C0303B00C532C0 /* CloudFormationDeleteStackResponse.m */,
+				B20D10A217C0303B00C532C0 /* CloudFormationDeleteStackResponseUnmarshaller.m */,
+				B20D10A317C0303B00C532C0 /* CloudFormationDescribeStackEventsRequest.m */,
+				B20D10A417C0303B00C532C0 /* CloudFormationDescribeStackEventsRequestMarshaller.m */,
+				B20D10A517C0303B00C532C0 /* CloudFormationDescribeStackEventsResponse.m */,
+				B20D10A617C0303B00C532C0 /* CloudFormationDescribeStackEventsResponseUnmarshaller.m */,
+				B20D10A717C0303B00C532C0 /* CloudFormationDescribeStackResourceRequest.m */,
+				B20D10A817C0303B00C532C0 /* CloudFormationDescribeStackResourceRequestMarshaller.m */,
+				B20D10A917C0303B00C532C0 /* CloudFormationDescribeStackResourceResponse.m */,
+				B20D10AA17C0303B00C532C0 /* CloudFormationDescribeStackResourceResponseUnmarshaller.m */,
+				B20D10AB17C0303B00C532C0 /* CloudFormationDescribeStackResourcesRequest.m */,
+				B20D10AC17C0303B00C532C0 /* CloudFormationDescribeStackResourcesRequestMarshaller.m */,
+				B20D10AD17C0303B00C532C0 /* CloudFormationDescribeStackResourcesResponse.m */,
+				B20D10AE17C0303B00C532C0 /* CloudFormationDescribeStackResourcesResponseUnmarshaller.m */,
+				B20D10AF17C0303B00C532C0 /* CloudFormationDescribeStacksRequest.m */,
+				B20D10B017C0303B00C532C0 /* CloudFormationDescribeStacksRequestMarshaller.m */,
+				B20D10B117C0303B00C532C0 /* CloudFormationDescribeStacksResponse.m */,
+				B20D10B217C0303B00C532C0 /* CloudFormationDescribeStacksResponseUnmarshaller.m */,
+				B20D10B317C0303B00C532C0 /* CloudFormationEstimateTemplateCostRequest.m */,
+				B20D10B417C0303B00C532C0 /* CloudFormationEstimateTemplateCostRequestMarshaller.m */,
+				B20D10B517C0303B00C532C0 /* CloudFormationEstimateTemplateCostResponse.m */,
+				B20D10B617C0303B00C532C0 /* CloudFormationEstimateTemplateCostResponseUnmarshaller.m */,
+				B20D10B717C0303B00C532C0 /* CloudFormationGetTemplateRequest.m */,
+				B20D10B817C0303B00C532C0 /* CloudFormationGetTemplateRequestMarshaller.m */,
+				B20D10B917C0303B00C532C0 /* CloudFormationGetTemplateResponse.m */,
+				B20D10BA17C0303B00C532C0 /* CloudFormationGetTemplateResponseUnmarshaller.m */,
+				B20D10BB17C0303B00C532C0 /* CloudFormationListStackResourcesRequest.m */,
+				B20D10BC17C0303B00C532C0 /* CloudFormationListStackResourcesRequestMarshaller.m */,
+				B20D10BD17C0303B00C532C0 /* CloudFormationListStackResourcesResponse.m */,
+				B20D10BE17C0303B00C532C0 /* CloudFormationListStackResourcesResponseUnmarshaller.m */,
+				B20D10BF17C0303B00C532C0 /* CloudFormationListStacksRequest.m */,
+				B20D10C017C0303B00C532C0 /* CloudFormationListStacksRequestMarshaller.m */,
+				B20D10C117C0303C00C532C0 /* CloudFormationListStacksResponse.m */,
+				B20D10C217C0303C00C532C0 /* CloudFormationListStacksResponseUnmarshaller.m */,
+				B20D10C317C0303C00C532C0 /* CloudFormationOutput.m */,
+				B2C29C3F17C0F5F600F840BE /* CloudFormationOutputUnmarshaller.m */,
+				B20D10C417C0303C00C532C0 /* CloudFormationParameter.m */,
+				B2C29C4117C0F60500F840BE /* CloudFormationParameterUnmarshaller.m */,
+				B20D10C517C0303C00C532C0 /* CloudFormationStack.m */,
+				B2270F3317C0D98A00A858AB /* CloudFormationStackUnmarshaller.m */,
+				B20D10C617C0303C00C532C0 /* CloudFormationStackEvent.m */,
+				B2270F2917C0D87800A858AB /* CloudFormationStackEventUnmarshaller.m */,
+				B20D10C717C0303C00C532C0 /* CloudFormationStackResource.m */,
+				B2270F2D17C0D8F200A858AB /* CloudFormationStackResourceUnmarshaller.m */,
+				B20D10C817C0303C00C532C0 /* CloudFormationStackResourceDetail.m */,
+				B2C29C4317C0F61300F840BE /* CloudFormationStackResourceDetailUnmarshaller.m */,
+				B20D10C917C0303C00C532C0 /* CloudFormationStackResourceSummary.m */,
+				B2270F3517C0D9A300A858AB /* CloudFormationStackResourceSummaryUnmarshaller.m */,
+				B20D10CA17C0303C00C532C0 /* CloudFormationStackSummary.m */,
+				B23ABB2517C0E8F400CE41C9 /* CloudFormationStackSummaryUnmarshaller.m */,
+				B20D10CB17C0303C00C532C0 /* CloudFormationTag.m */,
+				B2C29C4517C0F61F00F840BE /* CloudFormationTagUnmarshaller.m */,
+				B20D10CC17C0303C00C532C0 /* CloudFormationTemplateParameter.m */,
+				B2270F3917C0DA1000A858AB /* CloudFormationTemplateParameterUnmarshaller.m */,
+				B20D10CD17C0303C00C532C0 /* CloudFormationUpdateStackRequest.m */,
+				B20D10CE17C0303C00C532C0 /* CloudFormationUpdateStackRequestMarshaller.m */,
+				B20D10CF17C0303C00C532C0 /* CloudFormationUpdateStackResponse.m */,
+				B20D10D017C0303C00C532C0 /* CloudFormationUpdateStackResponseUnmarshaller.m */,
+				B20D10D117C0303C00C532C0 /* CloudFormationValidateTemplateRequest.m */,
+				B20D10D217C0303C00C532C0 /* CloudFormationValidateTemplateRequestMarshaller.m */,
+				B20D10D317C0303C00C532C0 /* CloudFormationValidateTemplateResponse.m */,
+				B20D10D417C0303C00C532C0 /* CloudFormationValidateTemplateResponseUnmarshaller.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B20D100417C02D4E00C532C0 /* CloudFormation */ = {
+			isa = PBXGroup;
+			children = (
+				B2270F2117C0D79D00A858AB /* CloudFormationAlreadyExistsException.h */,
+				B2270F2217C0D79D00A858AB /* CloudFormationInsufficientCapabilitiesException.h */,
+				B2270F2317C0D79D00A858AB /* CloudFormationLimitExceededException.h */,
+				B20D100517C02F4200C532C0 /* AmazonCloudFormationClient.h */,
+				B20D100617C02F4200C532C0 /* AWSCloudFormation.h */,
+				B20D100717C02F4200C532C0 /* CloudFormationCancelUpdateStackRequest.h */,
+				B20D100817C02F4200C532C0 /* CloudFormationCancelUpdateStackRequestMarshaller.h */,
+				B20D100917C02F4200C532C0 /* CloudFormationCancelUpdateStackResponse.h */,
+				B20D100A17C02F4200C532C0 /* CloudFormationCancelUpdateStackResponseUnmarshaller.h */,
+				B20D100B17C02F4200C532C0 /* CloudFormationCreateStackRequest.h */,
+				B20D100C17C02F4200C532C0 /* CloudFormationCreateStackRequestMarshaller.h */,
+				B20D100D17C02F4200C532C0 /* CloudFormationCreateStackResponse.h */,
+				B20D100E17C02F4200C532C0 /* CloudFormationCreateStackResponseUnmarshaller.h */,
+				B20D100F17C02F4200C532C0 /* CloudFormationDeleteStackRequest.h */,
+				B20D101017C02F4200C532C0 /* CloudFormationDeleteStackRequestMarshaller.h */,
+				B20D101117C02F4200C532C0 /* CloudFormationDeleteStackResponse.h */,
+				B20D101217C02F4200C532C0 /* CloudFormationDeleteStackResponseUnmarshaller.h */,
+				B20D101317C02F4200C532C0 /* CloudFormationDescribeStackEventsRequest.h */,
+				B20D101417C02F4200C532C0 /* CloudFormationDescribeStackEventsRequestMarshaller.h */,
+				B20D101517C02F4200C532C0 /* CloudFormationDescribeStackEventsResponse.h */,
+				B20D101617C02F4200C532C0 /* CloudFormationDescribeStackEventsResponseUnmarshaller.h */,
+				B20D101717C02F4200C532C0 /* CloudFormationDescribeStackResourceRequest.h */,
+				B20D101817C02F4200C532C0 /* CloudFormationDescribeStackResourceRequestMarshaller.h */,
+				B20D101917C02F4200C532C0 /* CloudFormationDescribeStackResourceResponse.h */,
+				B20D101A17C02F4200C532C0 /* CloudFormationDescribeStackResourceResponseUnmarshaller.h */,
+				B20D101B17C02F4200C532C0 /* CloudFormationDescribeStackResourcesRequest.h */,
+				B20D101C17C02F4200C532C0 /* CloudFormationDescribeStackResourcesRequestMarshaller.h */,
+				B20D101D17C02F4200C532C0 /* CloudFormationDescribeStackResourcesResponse.h */,
+				B20D101E17C02F4200C532C0 /* CloudFormationDescribeStackResourcesResponseUnmarshaller.h */,
+				B20D101F17C02F4200C532C0 /* CloudFormationDescribeStacksRequest.h */,
+				B20D102017C02F4200C532C0 /* CloudFormationDescribeStacksRequestMarshaller.h */,
+				B20D102117C02F4200C532C0 /* CloudFormationDescribeStacksResponse.h */,
+				B20D102217C02F4200C532C0 /* CloudFormationDescribeStacksResponseUnmarshaller.h */,
+				B20D102317C02F4200C532C0 /* CloudFormationEstimateTemplateCostRequest.h */,
+				B20D102417C02F4200C532C0 /* CloudFormationEstimateTemplateCostRequestMarshaller.h */,
+				B20D102517C02F4200C532C0 /* CloudFormationEstimateTemplateCostResponse.h */,
+				B20D102617C02F4200C532C0 /* CloudFormationEstimateTemplateCostResponseUnmarshaller.h */,
+				B20D102717C02F4200C532C0 /* CloudFormationGetTemplateRequest.h */,
+				B20D102817C02F4200C532C0 /* CloudFormationGetTemplateRequestMarshaller.h */,
+				B20D102917C02F4200C532C0 /* CloudFormationGetTemplateResponse.h */,
+				B20D102A17C02F4200C532C0 /* CloudFormationGetTemplateResponseUnmarshaller.h */,
+				B20D102B17C02F4300C532C0 /* CloudFormationListStackResourcesRequest.h */,
+				B20D102C17C02F4300C532C0 /* CloudFormationListStackResourcesRequestMarshaller.h */,
+				B20D102D17C02F4300C532C0 /* CloudFormationListStackResourcesResponse.h */,
+				B20D102E17C02F4300C532C0 /* CloudFormationListStackResourcesResponseUnmarshaller.h */,
+				B20D102F17C02F4300C532C0 /* CloudFormationListStacksRequest.h */,
+				B20D103017C02F4300C532C0 /* CloudFormationListStacksRequestMarshaller.h */,
+				B20D103117C02F4300C532C0 /* CloudFormationListStacksResponse.h */,
+				B20D103217C02F4300C532C0 /* CloudFormationListStacksResponseUnmarshaller.h */,
+				B20D103317C02F4300C532C0 /* CloudFormationOutput.h */,
+				B2C29C3717C0F4D100F840BE /* CloudFormationOutputUnmarshaller.h */,
+				B20D103417C02F4300C532C0 /* CloudFormationParameter.h */,
+				B2C29C3917C0F4DE00F840BE /* CloudFormationParameterUnmarshaller.h */,
+				B20D103617C02F4300C532C0 /* CloudFormationRequest.h */,
+				B20D103717C02F4300C532C0 /* CloudFormationResponse.h */,
+				B20D103817C02F4300C532C0 /* CloudFormationResponseUnmarshaller.h */,
+				B20D103917C02F4300C532C0 /* CloudFormationStack.h */,
+				B2270F2F17C0D94E00A858AB /* CloudFormationStackUnmarshaller.h */,
+				B20D103A17C02F4300C532C0 /* CloudFormationStackEvent.h */,
+				B2270F2717C0D81C00A858AB /* CloudFormationStackEventUnmarshaller.h */,
+				B20D103B17C02F4300C532C0 /* CloudFormationStackResource.h */,
+				B2270F2B17C0D8D000A858AB /* CloudFormationStackResourceUnmarshaller.h */,
+				B20D103C17C02F4300C532C0 /* CloudFormationStackResourceDetail.h */,
+				B2C29C3B17C0F4EE00F840BE /* CloudFormationStackResourceDetailUnmarshaller.h */,
+				B20D103D17C02F4300C532C0 /* CloudFormationStackResourceSummary.h */,
+				B2270F3117C0D96E00A858AB /* CloudFormationStackResourceSummaryUnmarshaller.h */,
+				B20D103E17C02F4300C532C0 /* CloudFormationStackSummary.h */,
+				B2270F3B17C0DBF200A858AB /* CloudFormationStackSummaryUnmarshaller.h */,
+				B20D103F17C02F4300C532C0 /* CloudFormationTag.h */,
+				B2C29C3D17C0F58900F840BE /* CloudFormationTagUnmarshaller.h */,
+				B20D104117C02F4300C532C0 /* CloudFormationTemplateParameter.h */,
+				B2270F3717C0D9F300A858AB /* CloudFormationTemplateParameterUnmarshaller.h */,
+				B20D104217C02F4300C532C0 /* CloudFormationUpdateStackRequest.h */,
+				B20D104317C02F4300C532C0 /* CloudFormationUpdateStackRequestMarshaller.h */,
+				B20D104417C02F4300C532C0 /* CloudFormationUpdateStackResponse.h */,
+				B20D104517C02F4300C532C0 /* CloudFormationUpdateStackResponseUnmarshaller.h */,
+				B20D104617C02F4300C532C0 /* CloudFormationValidateTemplateRequest.h */,
+				B20D104717C02F4300C532C0 /* CloudFormationValidateTemplateRequestMarshaller.h */,
+				B20D104817C02F4300C532C0 /* CloudFormationValidateTemplateResponse.h */,
+				B20D104917C02F4300C532C0 /* CloudFormationValidateTemplateResponseUnmarshaller.h */,
+			);
+			name = CloudFormation;
+			sourceTree = "<group>";
+		};
 		CE45BD58170A57C000D1550D /* Amazon.DynamoDB_old */ = {
 			isa = PBXGroup;
 			children = (
@@ -11942,6 +12443,86 @@
 				38C97E8717B57B320044E640 /* SNSUnsubscribeRequestMarshaller.h in Headers */,
 				38C97E8817B57B320044E640 /* SNSUnsubscribeResponse.h in Headers */,
 				38C97E8917B57B320044E640 /* SNSUnsubscribeResponseUnmarshaller.h in Headers */,
+				B20D104A17C02F4300C532C0 /* AmazonCloudFormationClient.h in Headers */,
+				B20D104B17C02F4300C532C0 /* AWSCloudFormation.h in Headers */,
+				B20D104C17C02F4300C532C0 /* CloudFormationCancelUpdateStackRequest.h in Headers */,
+				B20D104D17C02F4300C532C0 /* CloudFormationCancelUpdateStackRequestMarshaller.h in Headers */,
+				B20D104E17C02F4300C532C0 /* CloudFormationCancelUpdateStackResponse.h in Headers */,
+				B20D104F17C02F4300C532C0 /* CloudFormationCancelUpdateStackResponseUnmarshaller.h in Headers */,
+				B20D105017C02F4300C532C0 /* CloudFormationCreateStackRequest.h in Headers */,
+				B20D105117C02F4300C532C0 /* CloudFormationCreateStackRequestMarshaller.h in Headers */,
+				B20D105217C02F4300C532C0 /* CloudFormationCreateStackResponse.h in Headers */,
+				B20D105317C02F4300C532C0 /* CloudFormationCreateStackResponseUnmarshaller.h in Headers */,
+				B20D105417C02F4300C532C0 /* CloudFormationDeleteStackRequest.h in Headers */,
+				B20D105517C02F4300C532C0 /* CloudFormationDeleteStackRequestMarshaller.h in Headers */,
+				B20D105617C02F4300C532C0 /* CloudFormationDeleteStackResponse.h in Headers */,
+				B20D105717C02F4300C532C0 /* CloudFormationDeleteStackResponseUnmarshaller.h in Headers */,
+				B20D105817C02F4300C532C0 /* CloudFormationDescribeStackEventsRequest.h in Headers */,
+				B20D105917C02F4300C532C0 /* CloudFormationDescribeStackEventsRequestMarshaller.h in Headers */,
+				B20D105A17C02F4300C532C0 /* CloudFormationDescribeStackEventsResponse.h in Headers */,
+				B20D105B17C02F4300C532C0 /* CloudFormationDescribeStackEventsResponseUnmarshaller.h in Headers */,
+				B20D105C17C02F4300C532C0 /* CloudFormationDescribeStackResourceRequest.h in Headers */,
+				B20D105D17C02F4300C532C0 /* CloudFormationDescribeStackResourceRequestMarshaller.h in Headers */,
+				B20D105E17C02F4300C532C0 /* CloudFormationDescribeStackResourceResponse.h in Headers */,
+				B20D105F17C02F4300C532C0 /* CloudFormationDescribeStackResourceResponseUnmarshaller.h in Headers */,
+				B20D106017C02F4300C532C0 /* CloudFormationDescribeStackResourcesRequest.h in Headers */,
+				B20D106117C02F4300C532C0 /* CloudFormationDescribeStackResourcesRequestMarshaller.h in Headers */,
+				B20D106217C02F4300C532C0 /* CloudFormationDescribeStackResourcesResponse.h in Headers */,
+				B20D106317C02F4300C532C0 /* CloudFormationDescribeStackResourcesResponseUnmarshaller.h in Headers */,
+				B20D106417C02F4300C532C0 /* CloudFormationDescribeStacksRequest.h in Headers */,
+				B20D106517C02F4300C532C0 /* CloudFormationDescribeStacksRequestMarshaller.h in Headers */,
+				B20D106617C02F4300C532C0 /* CloudFormationDescribeStacksResponse.h in Headers */,
+				B20D106717C02F4300C532C0 /* CloudFormationDescribeStacksResponseUnmarshaller.h in Headers */,
+				B20D106817C02F4300C532C0 /* CloudFormationEstimateTemplateCostRequest.h in Headers */,
+				B20D106917C02F4300C532C0 /* CloudFormationEstimateTemplateCostRequestMarshaller.h in Headers */,
+				B20D106A17C02F4300C532C0 /* CloudFormationEstimateTemplateCostResponse.h in Headers */,
+				B20D106B17C02F4300C532C0 /* CloudFormationEstimateTemplateCostResponseUnmarshaller.h in Headers */,
+				B20D106C17C02F4300C532C0 /* CloudFormationGetTemplateRequest.h in Headers */,
+				B20D106D17C02F4300C532C0 /* CloudFormationGetTemplateRequestMarshaller.h in Headers */,
+				B20D106E17C02F4300C532C0 /* CloudFormationGetTemplateResponse.h in Headers */,
+				B20D106F17C02F4300C532C0 /* CloudFormationGetTemplateResponseUnmarshaller.h in Headers */,
+				B20D107017C02F4300C532C0 /* CloudFormationListStackResourcesRequest.h in Headers */,
+				B20D107117C02F4300C532C0 /* CloudFormationListStackResourcesRequestMarshaller.h in Headers */,
+				B20D107217C02F4300C532C0 /* CloudFormationListStackResourcesResponse.h in Headers */,
+				B20D107317C02F4300C532C0 /* CloudFormationListStackResourcesResponseUnmarshaller.h in Headers */,
+				B20D107417C02F4300C532C0 /* CloudFormationListStacksRequest.h in Headers */,
+				B20D107517C02F4300C532C0 /* CloudFormationListStacksRequestMarshaller.h in Headers */,
+				B20D107617C02F4300C532C0 /* CloudFormationListStacksResponse.h in Headers */,
+				B20D107717C02F4300C532C0 /* CloudFormationListStacksResponseUnmarshaller.h in Headers */,
+				B20D107817C02F4300C532C0 /* CloudFormationOutput.h in Headers */,
+				B20D107917C02F4300C532C0 /* CloudFormationParameter.h in Headers */,
+				B20D107B17C02F4300C532C0 /* CloudFormationRequest.h in Headers */,
+				B20D107C17C02F4300C532C0 /* CloudFormationResponse.h in Headers */,
+				B20D107D17C02F4300C532C0 /* CloudFormationResponseUnmarshaller.h in Headers */,
+				B20D107E17C02F4300C532C0 /* CloudFormationStack.h in Headers */,
+				B20D107F17C02F4300C532C0 /* CloudFormationStackEvent.h in Headers */,
+				B20D108017C02F4300C532C0 /* CloudFormationStackResource.h in Headers */,
+				B20D108117C02F4300C532C0 /* CloudFormationStackResourceDetail.h in Headers */,
+				B20D108217C02F4300C532C0 /* CloudFormationStackResourceSummary.h in Headers */,
+				B20D108317C02F4300C532C0 /* CloudFormationStackSummary.h in Headers */,
+				B20D108417C02F4300C532C0 /* CloudFormationTag.h in Headers */,
+				B20D108617C02F4300C532C0 /* CloudFormationTemplateParameter.h in Headers */,
+				B20D108717C02F4300C532C0 /* CloudFormationUpdateStackRequest.h in Headers */,
+				B20D108817C02F4300C532C0 /* CloudFormationUpdateStackRequestMarshaller.h in Headers */,
+				B20D108917C02F4300C532C0 /* CloudFormationUpdateStackResponse.h in Headers */,
+				B20D108A17C02F4300C532C0 /* CloudFormationUpdateStackResponseUnmarshaller.h in Headers */,
+				B20D108B17C02F4300C532C0 /* CloudFormationValidateTemplateRequest.h in Headers */,
+				B20D108C17C02F4300C532C0 /* CloudFormationValidateTemplateRequestMarshaller.h in Headers */,
+				B20D108D17C02F4300C532C0 /* CloudFormationValidateTemplateResponse.h in Headers */,
+				B20D108E17C02F4300C532C0 /* CloudFormationValidateTemplateResponseUnmarshaller.h in Headers */,
+				B2270F2417C0D79D00A858AB /* CloudFormationAlreadyExistsException.h in Headers */,
+				B2270F2517C0D79D00A858AB /* CloudFormationInsufficientCapabilitiesException.h in Headers */,
+				B2270F2617C0D79D00A858AB /* CloudFormationLimitExceededException.h in Headers */,
+				B2270F2817C0D81C00A858AB /* CloudFormationStackEventUnmarshaller.h in Headers */,
+				B2270F2C17C0D8D000A858AB /* CloudFormationStackResourceUnmarshaller.h in Headers */,
+				B2270F3017C0D94E00A858AB /* CloudFormationStackUnmarshaller.h in Headers */,
+				B2270F3217C0D96E00A858AB /* CloudFormationStackResourceSummaryUnmarshaller.h in Headers */,
+				B2270F3817C0D9F300A858AB /* CloudFormationTemplateParameterUnmarshaller.h in Headers */,
+				B2270F3C17C0DBF200A858AB /* CloudFormationStackSummaryUnmarshaller.h in Headers */,
+				B2C29C3817C0F4D100F840BE /* CloudFormationOutputUnmarshaller.h in Headers */,
+				B2C29C3A17C0F4DE00F840BE /* CloudFormationParameterUnmarshaller.h in Headers */,
+				B2C29C3C17C0F4EE00F840BE /* CloudFormationStackResourceDetailUnmarshaller.h in Headers */,
+				B2C29C3E17C0F58900F840BE /* CloudFormationTagUnmarshaller.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -13660,6 +14241,85 @@
 				38C97D9417B57B1B0044E640 /* SNSRequest.m in Sources */,
 				38C97D9517B57B1B0044E640 /* SNSResponse.m in Sources */,
 				38C97D9617B57B1B0044E640 /* SNSResponseUnmarshaller.m in Sources */,
+				B20D109317C02FFB00C532C0 /* AmazonCloudFormationClient.m in Sources */,
+				B20D109417C02FFB00C532C0 /* CloudFormationRequest.m in Sources */,
+				B20D109517C02FFB00C532C0 /* CloudFormationResponse.m in Sources */,
+				B20D109617C02FFB00C532C0 /* CloudFormationResponseUnmarshaller.m in Sources */,
+				B20D10D517C0303C00C532C0 /* CloudFormationCancelUpdateStackRequest.m in Sources */,
+				B20D10D617C0303C00C532C0 /* CloudFormationCancelUpdateStackRequestMarshaller.m in Sources */,
+				B20D10D717C0303C00C532C0 /* CloudFormationCancelUpdateStackResponse.m in Sources */,
+				B20D10D817C0303C00C532C0 /* CloudFormationCancelUpdateStackResponseUnmarshaller.m in Sources */,
+				B20D10D917C0303C00C532C0 /* CloudFormationCreateStackRequest.m in Sources */,
+				B20D10DA17C0303C00C532C0 /* CloudFormationCreateStackRequestMarshaller.m in Sources */,
+				B20D10DB17C0303C00C532C0 /* CloudFormationCreateStackResponse.m in Sources */,
+				B20D10DC17C0303C00C532C0 /* CloudFormationCreateStackResponseUnmarshaller.m in Sources */,
+				B20D10DD17C0303C00C532C0 /* CloudFormationDeleteStackRequest.m in Sources */,
+				B20D10DE17C0303C00C532C0 /* CloudFormationDeleteStackRequestMarshaller.m in Sources */,
+				B20D10DF17C0303C00C532C0 /* CloudFormationDeleteStackResponse.m in Sources */,
+				B20D10E017C0303C00C532C0 /* CloudFormationDeleteStackResponseUnmarshaller.m in Sources */,
+				B20D10E117C0303C00C532C0 /* CloudFormationDescribeStackEventsRequest.m in Sources */,
+				B20D10E217C0303C00C532C0 /* CloudFormationDescribeStackEventsRequestMarshaller.m in Sources */,
+				B20D10E317C0303C00C532C0 /* CloudFormationDescribeStackEventsResponse.m in Sources */,
+				B20D10E417C0303C00C532C0 /* CloudFormationDescribeStackEventsResponseUnmarshaller.m in Sources */,
+				B20D10E517C0303C00C532C0 /* CloudFormationDescribeStackResourceRequest.m in Sources */,
+				B20D10E617C0303C00C532C0 /* CloudFormationDescribeStackResourceRequestMarshaller.m in Sources */,
+				B20D10E717C0303C00C532C0 /* CloudFormationDescribeStackResourceResponse.m in Sources */,
+				B20D10E817C0303C00C532C0 /* CloudFormationDescribeStackResourceResponseUnmarshaller.m in Sources */,
+				B20D10E917C0303C00C532C0 /* CloudFormationDescribeStackResourcesRequest.m in Sources */,
+				B20D10EA17C0303C00C532C0 /* CloudFormationDescribeStackResourcesRequestMarshaller.m in Sources */,
+				B20D10EB17C0303C00C532C0 /* CloudFormationDescribeStackResourcesResponse.m in Sources */,
+				B20D10EC17C0303C00C532C0 /* CloudFormationDescribeStackResourcesResponseUnmarshaller.m in Sources */,
+				B20D10ED17C0303C00C532C0 /* CloudFormationDescribeStacksRequest.m in Sources */,
+				B20D10EE17C0303C00C532C0 /* CloudFormationDescribeStacksRequestMarshaller.m in Sources */,
+				B20D10EF17C0303C00C532C0 /* CloudFormationDescribeStacksResponse.m in Sources */,
+				B20D10F017C0303C00C532C0 /* CloudFormationDescribeStacksResponseUnmarshaller.m in Sources */,
+				B20D10F117C0303C00C532C0 /* CloudFormationEstimateTemplateCostRequest.m in Sources */,
+				B20D10F217C0303C00C532C0 /* CloudFormationEstimateTemplateCostRequestMarshaller.m in Sources */,
+				B20D10F317C0303C00C532C0 /* CloudFormationEstimateTemplateCostResponse.m in Sources */,
+				B20D10F417C0303C00C532C0 /* CloudFormationEstimateTemplateCostResponseUnmarshaller.m in Sources */,
+				B20D10F517C0303C00C532C0 /* CloudFormationGetTemplateRequest.m in Sources */,
+				B20D10F617C0303C00C532C0 /* CloudFormationGetTemplateRequestMarshaller.m in Sources */,
+				B20D10F717C0303C00C532C0 /* CloudFormationGetTemplateResponse.m in Sources */,
+				B20D10F817C0303C00C532C0 /* CloudFormationGetTemplateResponseUnmarshaller.m in Sources */,
+				B20D10F917C0303C00C532C0 /* CloudFormationListStackResourcesRequest.m in Sources */,
+				B20D10FA17C0303C00C532C0 /* CloudFormationListStackResourcesRequestMarshaller.m in Sources */,
+				B20D10FB17C0303C00C532C0 /* CloudFormationListStackResourcesResponse.m in Sources */,
+				B20D10FC17C0303C00C532C0 /* CloudFormationListStackResourcesResponseUnmarshaller.m in Sources */,
+				B20D10FD17C0303C00C532C0 /* CloudFormationListStacksRequest.m in Sources */,
+				B20D10FE17C0303C00C532C0 /* CloudFormationListStacksRequestMarshaller.m in Sources */,
+				B20D10FF17C0303C00C532C0 /* CloudFormationListStacksResponse.m in Sources */,
+				B20D110017C0303C00C532C0 /* CloudFormationListStacksResponseUnmarshaller.m in Sources */,
+				B20D110117C0303C00C532C0 /* CloudFormationOutput.m in Sources */,
+				B20D110217C0303C00C532C0 /* CloudFormationParameter.m in Sources */,
+				B20D110317C0303C00C532C0 /* CloudFormationStack.m in Sources */,
+				B20D110417C0303C00C532C0 /* CloudFormationStackEvent.m in Sources */,
+				B20D110517C0303C00C532C0 /* CloudFormationStackResource.m in Sources */,
+				B20D110617C0303C00C532C0 /* CloudFormationStackResourceDetail.m in Sources */,
+				B20D110717C0303C00C532C0 /* CloudFormationStackResourceSummary.m in Sources */,
+				B20D110817C0303C00C532C0 /* CloudFormationStackSummary.m in Sources */,
+				B20D110917C0303C00C532C0 /* CloudFormationTag.m in Sources */,
+				B20D110A17C0303C00C532C0 /* CloudFormationTemplateParameter.m in Sources */,
+				B20D110B17C0303C00C532C0 /* CloudFormationUpdateStackRequest.m in Sources */,
+				B20D110C17C0303C00C532C0 /* CloudFormationUpdateStackRequestMarshaller.m in Sources */,
+				B20D110D17C0303C00C532C0 /* CloudFormationUpdateStackResponse.m in Sources */,
+				B20D110E17C0303C00C532C0 /* CloudFormationUpdateStackResponseUnmarshaller.m in Sources */,
+				B20D110F17C0303C00C532C0 /* CloudFormationValidateTemplateRequest.m in Sources */,
+				B20D111017C0303C00C532C0 /* CloudFormationValidateTemplateRequestMarshaller.m in Sources */,
+				B20D111117C0303C00C532C0 /* CloudFormationValidateTemplateResponse.m in Sources */,
+				B20D111217C0303C00C532C0 /* CloudFormationValidateTemplateResponseUnmarshaller.m in Sources */,
+				B2270F1C17C0D77500A858AB /* CloudFormationAlreadyExistsException.m in Sources */,
+				B2270F1F17C0D77F00A858AB /* CloudFormationInsufficientCapabilitiesException.m in Sources */,
+				B2270F2017C0D77F00A858AB /* CloudFormationLimitExceededException.m in Sources */,
+				B2270F2A17C0D87800A858AB /* CloudFormationStackEventUnmarshaller.m in Sources */,
+				B2270F2E17C0D8F200A858AB /* CloudFormationStackResourceUnmarshaller.m in Sources */,
+				B2270F3417C0D98A00A858AB /* CloudFormationStackUnmarshaller.m in Sources */,
+				B2270F3617C0D9A300A858AB /* CloudFormationStackResourceSummaryUnmarshaller.m in Sources */,
+				B2270F3A17C0DA1000A858AB /* CloudFormationTemplateParameterUnmarshaller.m in Sources */,
+				B23ABB2617C0E8F500CE41C9 /* CloudFormationStackSummaryUnmarshaller.m in Sources */,
+				B2C29C4017C0F5F700F840BE /* CloudFormationOutputUnmarshaller.m in Sources */,
+				B2C29C4217C0F60500F840BE /* CloudFormationParameterUnmarshaller.m in Sources */,
+				B2C29C4417C0F61300F840BE /* CloudFormationStackResourceDetailUnmarshaller.m in Sources */,
+				B2C29C4617C0F61F00F840BE /* CloudFormationTagUnmarshaller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

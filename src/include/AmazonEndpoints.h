@@ -75,6 +75,15 @@ typedef enum
 #define AMAZON_CW_AP_NORTHEAST_1_ENDPOINT     @"http://monitoring.ap-northeast-1.amazonaws.com"
 #define AMAZON_CW_SA_EAST_1_ENDPOINT          @"http://monitoring.sa-east-1.amazonaws.com"
 
+#define AMAZON_CF_US_EAST_1_ENDPOINT          @"http://cloudformation.us-east-1.amazonaws.com"
+#define AMAZON_CF_US_WEST_1_ENDPOINT          @"http://cloudformation.us-west-1.amazonaws.com"
+#define AMAZON_CF_US_WEST_2_ENDPOINT          @"http://cloudformation.us-west-2.amazonaws.com"
+#define AMAZON_CF_EU_WEST_1_ENDPOINT          @"http://cloudformation.eu-west-1.amazonaws.com"
+#define AMAZON_CF_AP_SOUTHEAST_1_ENDPOINT     @"http://cloudformation.ap-southeast-1.amazonaws.com"
+#define AMAZON_CF_AP_SOUTHEAST_2_ENDPOINT     @"http://cloudformation.ap-southeast-2.amazonaws.com"
+#define AMAZON_CF_AP_NORTHEAST_1_ENDPOINT     @"http://cloudformation.ap-northeast-1.amazonaws.com"
+#define AMAZON_CF_SA_EAST_1_ENDPOINT          @"http://cloudformation.sa-east-1.amazonaws.com"
+
 #define AMAZON_EC2_US_EAST_1_ENDPOINT         @"http://ec2.us-east-1.amazonaws.com"
 #define AMAZON_EC2_US_WEST_1_ENDPOINT         @"http://ec2.us-west-1.amazonaws.com"
 #define AMAZON_EC2_US_WEST_2_ENDPOINT         @"http://ec2.us-west-2.amazonaws.com"
@@ -165,6 +174,15 @@ typedef enum
 #define AMAZON_CW_AP_SOUTHEAST_2_ENDPOINT_SECURE     @"https://monitoring.ap-southeast-2.amazonaws.com"
 #define AMAZON_CW_AP_NORTHEAST_1_ENDPOINT_SECURE     @"https://monitoring.ap-northeast-1.amazonaws.com"
 #define AMAZON_CW_SA_EAST_1_ENDPOINT_SECURE          @"https://monitoring.sa-east-1.amazonaws.com"
+
+#define AMAZON_CF_US_EAST_1_ENDPOINT_SECURE          @"https://cloudformation.us-east-1.amazonaws.com"
+#define AMAZON_CF_US_WEST_1_ENDPOINT_SECURE          @"https://cloudformation.us-west-1.amazonaws.com"
+#define AMAZON_CF_US_WEST_2_ENDPOINT_SECURE          @"https://cloudformation.us-west-2.amazonaws.com"
+#define AMAZON_CF_EU_WEST_1_ENDPOINT_SECURE          @"https://cloudformation.eu-west-1.amazonaws.com"
+#define AMAZON_CF_AP_SOUTHEAST_1_ENDPOINT_SECURE     @"https://cloudformation.ap-southeast-1.amazonaws.com"
+#define AMAZON_CF_AP_SOUTHEAST_2_ENDPOINT_SECURE     @"https://cloudformation.ap-southeast-2.amazonaws.com"
+#define AMAZON_CF_AP_NORTHEAST_1_ENDPOINT_SECURE     @"https://cloudformation.ap-northeast-1.amazonaws.com"
+#define AMAZON_CF_SA_EAST_1_ENDPOINT_SECURE          @"https://cloudformation.sa-east-1.amazonaws.com"
 
 #define AMAZON_EC2_US_EAST_1_ENDPOINT_SECURE         @"https://ec2.us-east-1.amazonaws.com"
 #define AMAZON_EC2_US_WEST_1_ENDPOINT_SECURE         @"https://ec2.us-west-1.amazonaws.com"
