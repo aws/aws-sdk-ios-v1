@@ -244,6 +244,8 @@ typedef enum
 +(NSString *)sqsEndpoint:(AmazonRegion)region secure:(bool)useSSL;
 +(NSString *)cwEndpoint:(AmazonRegion)region;
 +(NSString *)cwEndpoint:(AmazonRegion)region secure:(bool)useSSL;
++(NSString *)cfEndpoint:(AmazonRegion)region;
++(NSString *)cfEndpoint:(AmazonRegion)region secure:(bool)useSSL;
 +(NSString *)ec2Endpoint:(AmazonRegion)region;
 +(NSString *)ec2Endpoint:(AmazonRegion)region secure:(bool)useSSL;
 +(NSString *)sesEndpoint:(AmazonRegion)region;
