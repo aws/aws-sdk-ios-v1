@@ -75,6 +75,13 @@
         
         return;
     }
+    if([self isCancelled]) {
+        if(self.request) {
+            [self.request cancel];
+        }
+        [self finish];
+        return;
+    }
 
     [self willChangeValueForKey:@"isExecuting"];
     _isExecuting = YES;
@@ -84,6 +91,13 @@
     self.request.delegate = self;
     
     [self.s3 putObject:self.request];
+}
+
+-(void)cancel
+{
+    [self.request cancel];
+    [super cancel];
+    [self finish];
 }
 
 - (BOOL)isConcurrent
@@ -118,6 +132,12 @@
 
 - (void)request:(AmazonServiceRequest *)request didSendData:(long long)bytesWritten totalBytesWritten:(long long)totalBytesWritten totalBytesExpectedToWrite:(long long)totalBytesExpectedToWrite
 {
+    if([self isCancelled]) {
+        [request cancel];
+        [self finish];
+        return;
+    }
+    
     if([self.delegate respondsToSelector:@selector(request:didSendData:totalBytesWritten:totalBytesExpectedToWrite:)])
     {
         [self.delegate request:request
@@ -130,6 +150,10 @@
 - (void)request:(AmazonServiceRequest *)request didFailWithError:(NSError *)error
 {
     AMZLogDebug(@"%@", error);
+    if([self isCancelled]) {
+        [self finish];
+        return;
+    }
 
     self.error = error;
 
@@ -155,6 +179,10 @@
 - (void)request:(AmazonServiceRequest *)request didFailWithServiceException:(NSException *)exception
 {
     AMZLogDebug(@"%@", exception);
+    if([self isCancelled]) {
+        [self finish];
+        return;
+    }
 
     self.exception = exception;
 
