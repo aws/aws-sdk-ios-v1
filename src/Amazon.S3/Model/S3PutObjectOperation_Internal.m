@@ -76,11 +76,9 @@
         return;
     }
     if([self isCancelled]) {
-        if(self.request) {
-            [self.request cancel];
-        }
+        [self.request cancel];
         [self finish];
-        return;
+      return;
     }
 
     [self willChangeValueForKey:@"isExecuting"];
@@ -150,7 +148,10 @@
 - (void)request:(AmazonServiceRequest *)request didFailWithError:(NSError *)error
 {
     AMZLogDebug(@"%@", error);
+
+    // exit as soon as possible on cancellation to skip the retry logic
     if([self isCancelled]) {
+        [self.request cancel];
         [self finish];
         return;
     }
@@ -179,7 +180,10 @@
 - (void)request:(AmazonServiceRequest *)request didFailWithServiceException:(NSException *)exception
 {
     AMZLogDebug(@"%@", exception);
+    
+    // if cancelled exit as quickly as possible to avoid the retry logic
     if([self isCancelled]) {
+        [self.request cancel];
         [self finish];
         return;
     }
