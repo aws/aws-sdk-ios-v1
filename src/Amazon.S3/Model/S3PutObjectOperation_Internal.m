@@ -75,6 +75,11 @@
         
         return;
     }
+    if([self isCancelled]) {
+        [self.request cancel];
+        [self finish];
+      return;
+    }
 
     [self willChangeValueForKey:@"isExecuting"];
     _isExecuting = YES;
@@ -84,6 +89,13 @@
     self.request.delegate = self;
     
     [self.s3 putObject:self.request];
+}
+
+-(void)cancel
+{
+    [self.request cancel];
+    [super cancel];
+    [self finish];
 }
 
 - (BOOL)isConcurrent
@@ -118,6 +130,12 @@
 
 - (void)request:(AmazonServiceRequest *)request didSendData:(long long)bytesWritten totalBytesWritten:(long long)totalBytesWritten totalBytesExpectedToWrite:(long long)totalBytesExpectedToWrite
 {
+    if([self isCancelled]) {
+        [request cancel];
+        [self finish];
+        return;
+    }
+    
     if([self.delegate respondsToSelector:@selector(request:didSendData:totalBytesWritten:totalBytesExpectedToWrite:)])
     {
         [self.delegate request:request
@@ -130,6 +148,13 @@
 - (void)request:(AmazonServiceRequest *)request didFailWithError:(NSError *)error
 {
     AMZLogDebug(@"%@", error);
+
+    // exit as soon as possible on cancellation to skip the retry logic
+    if([self isCancelled]) {
+        [self.request cancel];
+        [self finish];
+        return;
+    }
 
     self.error = error;
 
@@ -155,6 +180,13 @@
 - (void)request:(AmazonServiceRequest *)request didFailWithServiceException:(NSException *)exception
 {
     AMZLogDebug(@"%@", exception);
+    
+    // if cancelled exit as quickly as possible to avoid the retry logic
+    if([self isCancelled]) {
+        [self.request cancel];
+        [self finish];
+        return;
+    }
 
     self.exception = exception;
 
