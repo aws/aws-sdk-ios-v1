@@ -323,6 +323,55 @@
     return AMAZON_CW_US_EAST_1_ENDPOINT;
 }
 
++(NSString *)cfEndpoint:(AmazonRegion)region
+{
+    return [AmazonEndpoints cfEndpoint:region secure:YES];
+}
+
++(NSString *)cfEndpoint:(AmazonRegion)region secure:(bool)useSSL
+{
+    if (useSSL) {
+        switch (region) {
+            case US_EAST_1: return AMAZON_CF_US_EAST_1_ENDPOINT_SECURE;
+                
+            case US_WEST_1: return AMAZON_CF_US_WEST_1_ENDPOINT_SECURE;
+                
+            case US_WEST_2: return AMAZON_CF_US_WEST_2_ENDPOINT_SECURE;
+                
+            case EU_WEST_1: return AMAZON_CF_EU_WEST_1_ENDPOINT_SECURE;
+                
+            case AP_SOUTHEAST_1: return AMAZON_CF_AP_SOUTHEAST_1_ENDPOINT_SECURE;
+                
+            case AP_SOUTHEAST_2: return AMAZON_CF_AP_SOUTHEAST_2_ENDPOINT_SECURE;
+                
+            case AP_NORTHEAST_1: return AMAZON_CF_AP_NORTHEAST_1_ENDPOINT_SECURE;
+                
+            case SA_EAST_1: return AMAZON_CF_SA_EAST_1_ENDPOINT_SECURE;
+        };
+    }
+    else {
+        switch (region) {
+            case US_EAST_1: return AMAZON_CF_US_EAST_1_ENDPOINT;
+                
+            case US_WEST_1: return AMAZON_CF_US_WEST_1_ENDPOINT;
+                
+            case US_WEST_2: return AMAZON_CF_US_WEST_2_ENDPOINT;
+                
+            case EU_WEST_1: return AMAZON_CF_EU_WEST_1_ENDPOINT;
+                
+            case AP_SOUTHEAST_1: return AMAZON_CF_AP_SOUTHEAST_1_ENDPOINT;
+                
+            case AP_SOUTHEAST_2: return AMAZON_CF_AP_SOUTHEAST_2_ENDPOINT;
+                
+            case AP_NORTHEAST_1: return AMAZON_CF_AP_NORTHEAST_1_ENDPOINT;
+                
+            case SA_EAST_1: return AMAZON_CF_SA_EAST_1_ENDPOINT;
+        };
+    }
+    
+    return AMAZON_CF_US_EAST_1_ENDPOINT;
+}
+
 +(NSString *)autoscalingEndpoint:(AmazonRegion)region
 {
     return [AmazonEndpoints autoscalingEndpoint:region secure:YES];
