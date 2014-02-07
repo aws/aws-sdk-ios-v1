@@ -18,9 +18,7 @@
 
 #import "AmazonSDKUtil.h"
 
-
 @implementation DynamoDBCapacityUnmarshaller
-
 
 +(DynamoDBCapacity *)unmarshall:(NSDictionary *)jsonObject
 {
