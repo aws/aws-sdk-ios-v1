@@ -260,6 +260,7 @@ const int32_t kNotStarted = -1;
 - (void)request:(AmazonServiceRequest *)request didReceiveResponse:(NSURLResponse *)response
 {
     if (self.isCancelled) {
+        [self.getRequest cancel];
         if ([self.delegate respondsToSelector:@selector(request:didReceiveResponse:)]) {
             [self.delegate request:request didReceiveResponse:response];
         }
