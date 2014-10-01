@@ -329,34 +329,36 @@ static NSTimeInterval _clockskew = 0.0;
 
 +(NSDate *)convertStringToDate:(NSString *)string usingFormat:(NSString *)dateFormat
 {
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-
-    [dateFormatter setDateFormat:dateFormat];
-    [dateFormatter setLocale:[AmazonSDKUtil timestampLocale]];
-    [dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"GMT"]];
+    static NSDateFormatter *dateFormatter;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:dateFormat];
+        [dateFormatter setLocale:[AmazonSDKUtil timestampLocale]];
+        [dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"GMT"]];
+    });
 
     NSDate *parsed = [dateFormatter dateFromString:string];
 
     NSDate *localDate = [parsed dateByAddingTimeInterval:_clockskew];
-    
-    [dateFormatter release];
     
     return localDate;
 }
 
 +(NSString *)convertDateToString:(NSDate *)date usingFormat:(NSString *)dateFormat
 {
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    
-    [dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"GMT"]];
-    [dateFormatter setDateFormat:dateFormat];
-    [dateFormatter setLocale:[AmazonSDKUtil timestampLocale]];
+    static NSDateFormatter *dateFormatter;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"GMT"]];
+        [dateFormatter setDateFormat:dateFormat];
+        [dateFormatter setLocale:[AmazonSDKUtil timestampLocale]];
+    });
     
     NSDate *realDate =  [date dateByAddingTimeInterval:-1*_clockskew];
     
     NSString *formatted = [dateFormatter stringFromDate:realDate];
-    
-    [dateFormatter release];
     
     return formatted;
 }
