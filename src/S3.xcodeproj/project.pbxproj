@@ -166,7 +166,7 @@
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		CE2BF33C16CB32C2005189A8 /* S3AbortMultipartUploadsOperation_Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2BF33616CB32C2005189A8 /* S3AbortMultipartUploadsOperation_Internal.m */; };
 		CE2BF33E16CB32C2005189A8 /* S3MultipartUploadOperation_Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2BF33816CB32C2005189A8 /* S3MultipartUploadOperation_Internal.m */; };
-		CE2BF34016CB32C2005189A8 /* S3PutObjectOperation_Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2BF33A16CB32C2005189A8 /* S3PutObjectOperation_Internal.m */; };
+		CE2BF34016CB32C2005189A8 /* S3PutObjectOperation_Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2BF33A16CB32C2005189A8 /* S3PutObjectOperation_Internal.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		CE2BF34216CB32CF005189A8 /* S3TransferManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2BF34116CB32CF005189A8 /* S3TransferManager.m */; };
 		CE2CDBFE17036F640013DE5F /* AWSS3.h in Headers */ = {isa = PBXBuildFile; fileRef = CE2CDBFD17036F640013DE5F /* AWSS3.h */; };
 		CE8EF5F016F941A4007BF85E /* AmazonS3Client.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8EF55216F941A3007BF85E /* AmazonS3Client.h */; };
@@ -1505,7 +1505,7 @@
 				GCC_PREFIX_HEADER = S3_Prefix.pch;
 				HEADER_SEARCH_PATHS = include;
 				INSTALL_PATH = /usr/local/lib;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
@@ -1530,7 +1530,7 @@
 				GCC_PREFIX_HEADER = S3_Prefix.pch;
 				HEADER_SEARCH_PATHS = include;
 				INSTALL_PATH = /usr/local/lib;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
@@ -1615,7 +1615,7 @@
 				GCC_PREFIX_HEADER = S3_Prefix.pch;
 				HEADER_SEARCH_PATHS = include;
 				INSTALL_PATH = /usr/local/lib;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
@@ -1673,7 +1673,7 @@
 				GCC_PREFIX_HEADER = S3_Prefix.pch;
 				HEADER_SEARCH_PATHS = include;
 				INSTALL_PATH = /usr/local/lib;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",

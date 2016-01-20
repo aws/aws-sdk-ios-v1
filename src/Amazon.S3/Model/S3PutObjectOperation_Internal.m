@@ -23,7 +23,7 @@
 }
 
 @property (nonatomic, assign) NSInteger retryCount;
-@property (nonatomic, assign) id<AmazonServiceRequestDelegate> delegate;
+@property (nonatomic, weak) id<AmazonServiceRequestDelegate> delegate;
 
 @end
 
@@ -49,9 +49,6 @@
 
 - (void)dealloc
 {
-    [_response release];
-    
-    [super dealloc];
 }
 
 #pragma mark - Overriding NSOperation Methods
