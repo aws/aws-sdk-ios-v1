@@ -103,7 +103,7 @@ typedef enum {
 	id<AWS_SBJsonStreamParserDelegate> delegate;
 	AWS_SBJsonTokeniser *tokeniser;
     NSMutableArray *stateStack;
-	__weak AWS_SBJsonStreamParserState *state;
+	__unsafe_unretained AWS_SBJsonStreamParserState *state;
 	NSUInteger maxDepth;
 	NSString *error;
 }

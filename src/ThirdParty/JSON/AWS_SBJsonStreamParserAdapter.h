@@ -119,8 +119,8 @@ typedef enum {
 @private
 	id<AWS_SBJsonStreamParserAdapterDelegate> delegate;
 	NSUInteger levelsToSkip, depth;
-	__weak NSMutableArray *array;
-	__weak NSMutableDictionary *dict;
+	__unsafe_unretained NSMutableArray *array;
+	__unsafe_unretained NSMutableDictionary *dict;
 	NSMutableArray *keyStack;
 	NSMutableArray *stack;
 	
