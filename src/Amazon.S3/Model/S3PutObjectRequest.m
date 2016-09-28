@@ -71,7 +71,7 @@
     [encoder encodeBool:self.generateMD5 forKey:@"GenerateMD5"];
     [encoder encodeObject:self.expect forKey:@"Expect"];
     [encoder encodeInteger:self.expires forKey:@"Expires"];
-    [encoder encodeInteger:self.data forKey:@"Data"];
+    [encoder encodeObject:self.data forKey:@"Data"];
     [encoder encodeObject:self.filename forKey:@"Filename"];
     [encoder encodeObject:self.redirectLocation forKey:@"RedirectionLocation"];
 }
@@ -187,7 +187,7 @@
 #ifdef DEBUG
 -(void)connection:(NSURLConnection *)connection didSendBodyData:(NSInteger)bytesWritten totalBytesWritten:(NSInteger)totalBytesWritten totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite
 {
-    AMZLog(@"Wrote %d bytes to the connection", bytesWritten);
+    AMZLog(@"Wrote %ld bytes to the connection", (long)bytesWritten);
 }
 #endif
 

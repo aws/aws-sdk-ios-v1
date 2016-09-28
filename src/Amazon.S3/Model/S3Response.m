@@ -19,10 +19,6 @@
 #import "S3ErrorResponseHandler.h"
 #import "AmazonErrorHandler.h"
 
-@interface S3Response ()
-@property (nonatomic, readwrite, retain) NSDictionary *responseHeader;
-@end
-
 @implementation S3Response
 
 -(id)init
@@ -138,22 +134,14 @@
 
 -(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
+    [super connection:connection didReceiveResponse:response];
+
     NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
-
-    self.httpStatusCode = [httpResponse statusCode];
-
     NSDictionary *allHeaders = [httpResponse allHeaderFields];
     
-    self.responseHeader = [httpResponse allHeaderFields];
     for (id key in allHeaders)
     {
         [self setValue:[allHeaders valueForKey:key] forHTTPHeaderField:key];
-    }
-
-    [body setLength:0];
-
-    if ([self.request.delegate respondsToSelector:@selector(request:didReceiveResponse:)]) {
-        [self.request.delegate request:self.request didReceiveResponse:response];
     }
 }
 

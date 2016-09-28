@@ -17,6 +17,7 @@
 #import "AmazonServiceResponse.h"
 #import "AmazonServiceResponseUnmarshaller.h"
 #import "AmazonLogger.h"
+#import "AmazonErrorHandler.h"
 
 NSString *const AWSClockSkewError = @"AWSClockSkewError";
 

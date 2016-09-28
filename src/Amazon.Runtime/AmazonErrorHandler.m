@@ -13,6 +13,8 @@
  * permissions and limitations under the License.
  */
 
+#import "AmazonErrorHandler.h"
+#import "AmazonLogger.h"
 
 
 // Public Constants
