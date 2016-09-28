@@ -447,7 +447,13 @@
             request.date = [NSDate date];
         }
 
-        NSMutableURLRequest *urlRequest = [self signS3Request:request];
+        NSMutableURLRequest *urlRequest;
+        if (request.authorization == nil) {
+            urlRequest = [self signS3Request:request];
+        }
+        else {
+            urlRequest = [request configureURLRequest];
+        }
 
         if (self.connectionTimeout != 0) {
             [urlRequest setTimeoutInterval:self.connectionTimeout];
